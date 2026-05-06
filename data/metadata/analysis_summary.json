@@ -1,0 +1,65 @@
+{
+  "run_timestamp": "2026-05-06 03:10:14 CDT",
+  "crs_analysis": "EPSG:26916",
+  "walking_speed_mph": 3.0,
+  "sources": [
+    {
+      "name": "U.S. Census Bureau ACS 2024 5-year detailed tables",
+      "url": "https://api.census.gov/data/2024/acs/acs5",
+      "note": "Tract-level demographic and socioeconomic variables for Cook County, IL."
+    },
+    {
+      "name": "U.S. Census Bureau 2024 TIGER/Line census tracts",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/TRACT/tl_2024_17_tract.zip",
+      "note": "Official Illinois census tract geometry joined to ACS by GEOID."
+    },
+    {
+      "name": "City of Chicago Boundaries - Community Areas",
+      "url": "https://data.cityofchicago.org/resource/igwz-8jzy.geojson",
+      "note": "Official community-area polygons used for communication and rollups."
+    },
+    {
+      "name": "City of Chicago CTA L stops",
+      "url": "https://data.cityofchicago.org/resource/8pix-ypme.geojson",
+      "note": "Station points used as transit context in the QGIS project."
+    },
+    {
+      "name": "OpenStreetMap via Overpass API",
+      "url": "https://overpass-api.de/api/interpreter",
+      "note": "Museum, gallery, and arts-centre points extracted on the run date."
+    }
+  ],
+  "institution_counts": {
+    "Museum": 71,
+    "Gallery": 49,
+    "Arts center": 43
+  },
+  "tract_count": 782,
+  "community_area_count": 77,
+  "model": {
+    "n_model_tracts": 763,
+    "r_squared": 0.34122110566094144,
+    "adj_r_squared": 0.3351132218723675,
+    "dependent_variable": "broad_walk_min",
+    "weight": "ACS tract population",
+    "covariance": "HC1 robust"
+  },
+  "nearest_neighbor": {
+    "broad_institution_count": 163.0,
+    "observed_mean_nn_m": 555.3258308880507,
+    "expected_mean_nn_m_convex_hull": 790.8749481546818,
+    "nearest_neighbor_ratio": 0.7021664198414316,
+    "nearest_neighbor_z_approx": -7.274419581170323,
+    "convex_hull_area_sqmi": 157.45826557731468
+  },
+  "key_findings": {
+    "high_vs_low_poverty_walk_min_difference": 3.0688282740803103,
+    "high_vs_low_no_vehicle_walk_min_difference": -13.051084578137399,
+    "population_share_with_broad_access_within_1mi": 0.6529965502515356,
+    "population_share_over_20min_from_broad_institution": 0.3470034497484644,
+    "poverty_model_coefficient_minutes_per_full_share": -13.243337140519357,
+    "no_vehicle_model_coefficient_minutes_per_full_share": -5.364665311734769,
+    "model_r_squared": 0.34122110566094144,
+    "nearest_neighbor_ratio_broad": 0.7021664198414316
+  }
+}

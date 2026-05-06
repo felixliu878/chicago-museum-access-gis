@@ -1,0 +1,4183 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-05-06T07:57:30Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 368064889,
+  "lat": 41.7550267,
+  "lon": -87.7966267,
+  "tags": {
+    "addr:city": "Bedford Park",
+    "addr:postcode": "60638",
+    "addr:state": "IL",
+    "addr:street": "West 75th Street",
+    "amenity": "arts_centre",
+    "building": "yes",
+    "ele": "189",
+    "gnis:feature_id": "1836904",
+    "name": "Thai Culture Center",
+    "source": "USGS Geonames"
+  }
+},
+{
+  "type": "node",
+  "id": 368065517,
+  "lat": 41.7644926,
+  "lon": -87.6867486,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2525",
+    "addr:postcode": "60629",
+    "addr:state": "IL",
+    "addr:street": "West 71st Street",
+    "amenity": "arts_centre",
+    "ele": "184",
+    "gnis:feature_id": "2100158",
+    "name": "Ephraim Bajar Cultural Center",
+    "source": "USGS Geonames",
+    "website": "https://ebaharcenter.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 368065523,
+  "lat": 41.8239847,
+  "lon": -87.7622822,
+  "tags": {
+    "addr:state": "IL",
+    "amenity": "arts_centre",
+    "ele": "182",
+    "gnis:feature_id": "2100552",
+    "name": "Jedlica Performing Arts Center",
+    "source": "USGS Geonames"
+  }
+},
+{
+  "type": "node",
+  "id": 368072194,
+  "lat": 41.9146648,
+  "lon": -87.6365585,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1763",
+    "addr:postcode": "60614",
+    "addr:state": "IL",
+    "addr:street": "North North Park Avenue",
+    "amenity": "arts_centre",
+    "building": "yes",
+    "ele": "182",
+    "gnis:feature_id": "1832494",
+    "name": "Old Town Triangle Association",
+    "polling_station": "yes",
+    "source": "USGS Geonames"
+  }
+},
+{
+  "type": "node",
+  "id": 2560067669,
+  "lat": 41.8819299,
+  "lon": -87.6247089,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "8",
+    "addr:postcode": "60603",
+    "addr:state": "IL",
+    "addr:street": "South Michigan Avenue",
+    "addr:unit": "1220",
+    "amenity": "arts_centre",
+    "name": "Bert Green Fine Art",
+    "phone": "+1 312-434-7544",
+    "website": "https://bgfa.us/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2979738790,
+  "lat": 41.8783300,
+  "lon": -87.6325680,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "230",
+    "addr:postcode": "60604",
+    "addr:state": "IL",
+    "addr:street": "South LaSalle Street",
+    "fee": "no",
+    "name": "Money Museum",
+    "opening_hours": "Mo-Fr 08:30-17:00",
+    "operator": "Federal Reserve Bank of Chicago",
+    "operator:type": "government",
+    "tourism": "museum",
+    "website": "https://www.chicagofed.org/education/money-museum/",
+    "wikidata": "Q965251",
+    "wikipedia": "en:Federal Reserve Bank of Chicago"
+  }
+},
+{
+  "type": "node",
+  "id": 3572913469,
+  "lat": 41.8884954,
+  "lon": -87.6246857,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "376",
+    "addr:postcode": "60601",
+    "addr:state": "IL",
+    "addr:street": "North Michigan Avenue",
+    "museum": "local",
+    "name": "McCormick Bridgehouse & Chicago River Museum",
+    "tourism": "museum",
+    "website": "https://www.bridgehousemuseum.org/",
+    "wikidata": "Q1928112",
+    "wikipedia": "en:DuSable Bridge"
+  }
+},
+{
+  "type": "node",
+  "id": 3574822039,
+  "lat": 41.7187453,
+  "lon": -87.6678158,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "9625",
+    "addr:postcode": "60643",
+    "addr:state": "IL",
+    "addr:street": "South Longwood Drive",
+    "museum": "art",
+    "name": "Vanderpoel Art Museum",
+    "opening_hours": "Tu,Th 13:00-16:00; Sa 10:00-12:00",
+    "operator": "Vanderpoel Art Association",
+    "phone": "+1-773-779-0007",
+    "tourism": "museum",
+    "website": "https://vanderpoelartmuseum.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 3575010905,
+  "lat": 41.9321144,
+  "lon": -87.7127287,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2800",
+    "addr:postcode": "60618",
+    "addr:state": "IL",
+    "addr:street": "North Milwaukee Avenue",
+    "amenity": "arts_centre",
+    "name": "Hairpin Arts Center"
+  }
+},
+{
+  "type": "node",
+  "id": 3575010906,
+  "lat": 41.9318131,
+  "lon": -87.7134566,
+  "tags": {
+    "amenity": "arts_centre",
+    "name": "Elastic Arts Foundation"
+  }
+},
+{
+  "type": "node",
+  "id": 3575515095,
+  "lat": 41.9023107,
+  "lon": -87.7031870,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "3015",
+    "addr:postcode": "60622",
+    "addr:state": "IL",
+    "addr:street": "West Division Street",
+    "museum": "art",
+    "name": "National Museum of Puerto Rican Arts & Culture",
+    "opening_hours": "Tu-Fr 10:00-17:00; Sa 10:00-14:00",
+    "phone": "+1-773-486-8345",
+    "tourism": "museum",
+    "website": "https://nmprac.org/",
+    "wikidata": "Q15228725",
+    "wikipedia": "en:National Museum of Puerto Rican Arts and Culture"
+  }
+},
+{
+  "type": "node",
+  "id": 3629670300,
+  "lat": 41.7891420,
+  "lon": -87.6010200,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5811",
+    "addr:postcode": "60637",
+    "addr:state": "IL",
+    "addr:street": "South Ellis Avenue",
+    "name": "The Renaissance Society",
+    "tourism": "museum",
+    "website": "https://www.renaissancesociety.org/",
+    "wikidata": "Q2143255"
+  }
+},
+{
+  "type": "node",
+  "id": 3652936567,
+  "lat": 41.8996737,
+  "lon": -87.6610500,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "984",
+    "addr:postcode": "60642",
+    "addr:state": "IL",
+    "addr:street": "North Milwaukee Avenue",
+    "museum": "history",
+    "name": "Polish Museum of America",
+    "tourism": "museum",
+    "website": "https://www.polishmuseumofamerica.org/",
+    "wikidata": "Q3394265",
+    "wikipedia": "en:Polish Museum of America"
+  }
+},
+{
+  "type": "node",
+  "id": 3660898208,
+  "lat": 41.8973289,
+  "lon": -87.6250576,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "820",
+    "addr:postcode": "60611",
+    "addr:state": "IL",
+    "addr:street": "North Michigan Avenue",
+    "museum": "art",
+    "name": "Loyola University Museum of Art",
+    "tourism": "museum",
+    "website": "https://www.luc.edu/luma/",
+    "wikidata": "Q6694613",
+    "wikipedia": "en:Loyola University Museum of Art"
+  }
+},
+{
+  "type": "node",
+  "id": 3744841481,
+  "lat": 41.8742073,
+  "lon": -87.6245139,
+  "tags": {
+    "fee": "no",
+    "name": "The Museum of Contemporary Photography",
+    "tourism": "museum",
+    "website": "https://www.mocp.org/",
+    "wikidata": "Q3328434"
+  }
+},
+{
+  "type": "node",
+  "id": 3785693441,
+  "lat": 41.9835968,
+  "lon": -87.7959941,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5624",
+    "addr:postcode": "60631",
+    "addr:state": "IL",
+    "addr:street": "North Newark Avenue",
+    "museum": "local",
+    "name": "Norwood Park Historical Society",
+    "tourism": "museum",
+    "website": "https://www.norwoodparkhistoricalsociety.org"
+  }
+},
+{
+  "type": "node",
+  "id": 3988653236,
+  "lat": 41.9543845,
+  "lon": -87.7486367,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "4041",
+    "addr:postcode": "60641",
+    "addr:state": "IL",
+    "addr:street": "North Milwaukee Avenue",
+    "museum": "art",
+    "name": "National Veterans Art Museum",
+    "tourism": "museum",
+    "website": "https://www.nvam.org/",
+    "wikidata": "Q6979302",
+    "wikipedia": "en:National Veterans Art Museum"
+  }
+},
+{
+  "type": "node",
+  "id": 4012150293,
+  "lat": 41.9921847,
+  "lon": -87.8639965,
+  "tags": {
+    "addr:city": "Rosemont",
+    "addr:housenumber": "9513",
+    "addr:postcode": "60018",
+    "addr:state": "IL",
+    "addr:street": "West Higgins Road",
+    "museum": "art",
+    "name": "Museum of Hummels",
+    "source": "http://www.rosemont.com/community/museum-of-hummels/",
+    "tourism": "museum",
+    "website": "https://rosemont.com/museum-of-hummels/"
+  }
+},
+{
+  "type": "node",
+  "id": 4036939574,
+  "lat": 41.9133466,
+  "lon": -87.7112397,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1757",
+    "addr:postcode": "60647",
+    "addr:state": "IL",
+    "addr:street": "North Kimball Avenue",
+    "amenity": "arts_centre",
+    "check_date": "2025-01-27",
+    "name": "Kimball Arts Center"
+  }
+},
+{
+  "type": "node",
+  "id": 4060205627,
+  "lat": 41.8942846,
+  "lon": -87.6265031,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "50",
+    "addr:postcode": "60611",
+    "addr:state": "IL",
+    "addr:street": "East Erie Street",
+    "fee": "yes",
+    "museum": "art",
+    "name": "Richard H. Driehaus Museum",
+    "tourism": "museum",
+    "website": "https://driehausmuseum.org/",
+    "wikidata": "Q14687486",
+    "wikipedia": "en:Driehaus Museum"
+  }
+},
+{
+  "type": "node",
+  "id": 4089091483,
+  "lat": 41.9545292,
+  "lon": -87.7486055,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "4041",
+    "addr:postcode": "60641",
+    "addr:state": "IL",
+    "addr:street": "North Milwaukee Avenue",
+    "amenity": "arts_centre",
+    "name": "Inside Out Art Studio"
+  }
+},
+{
+  "type": "node",
+  "id": 4089091484,
+  "lat": 41.9546289,
+  "lon": -87.7485116,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "4041",
+    "addr:postcode": "60641",
+    "addr:state": "IL",
+    "addr:street": "North Milwaukee Avenue",
+    "amenity": "arts_centre",
+    "name": "Chicago Ballet Center"
+  }
+},
+{
+  "type": "node",
+  "id": 4089091901,
+  "lat": 41.9531386,
+  "lon": -87.7482455,
+  "tags": {
+    "amenity": "arts_centre",
+    "name": "Rico Music & Art"
+  }
+},
+{
+  "type": "node",
+  "id": 4217839176,
+  "lat": 41.9417330,
+  "lon": -87.7271053,
+  "tags": {
+    "name": "Night Club",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 4222717944,
+  "lat": 41.8909373,
+  "lon": -87.6164093,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "435",
+    "addr:postcode": "60611",
+    "addr:state": "IL",
+    "addr:street": "East Illinois Street",
+    "addr:unit": "151",
+    "name": "Ogilvie Pertl Gallery",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 4541428858,
+  "lat": 41.9171899,
+  "lon": -87.7122707,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "3407",
+    "addr:postcode": "60647",
+    "addr:state": "IL",
+    "addr:street": "West Armitage Avenue",
+    "name": "Busy Beaver Button Museum",
+    "opening_hours": "Mo-Fr 10:00-16:00",
+    "tourism": "museum",
+    "website": "https://www.buttonmuseum.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 4960948049,
+  "lat": 41.8097751,
+  "lon": -87.5995050,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1060",
+    "addr:postcode": "60653",
+    "addr:state": "IL",
+    "addr:street": "East 47th Street",
+    "amenity": "arts_centre",
+    "name": "Little Black Pearl Art Gallery",
+    "website": "https://www.blackpearl.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 5062541126,
+  "lat": 41.8914645,
+  "lon": -87.6013562,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "700",
+    "addr:postcode": "60611",
+    "addr:state": "IL",
+    "addr:street": "East Grand Avenue",
+    "museum": "art",
+    "name": "Dreihaus Gallery of Stained Glass",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "node",
+  "id": 5169949885,
+  "lat": 41.8855608,
+  "lon": -87.6249909,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "180",
+    "addr:postcode": "60601",
+    "addr:state": "IL",
+    "addr:street": "North Michigan Avenue",
+    "name": "American Writers Museum",
+    "phone": "+1 312-374-8790",
+    "tourism": "museum",
+    "tourism_1": "attraction",
+    "website": "https://americanwritersmuseum.org/",
+    "wikidata": "Q19864096"
+  }
+},
+{
+  "type": "node",
+  "id": 5326036084,
+  "lat": 41.8310176,
+  "lon": -87.6565174,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1200",
+    "addr:postcode": "60609",
+    "addr:state": "IL",
+    "addr:street": "West 35th Street",
+    "amenity": "arts_centre",
+    "name": "Bridgeport Art Center",
+    "website": "https://bridgeportart.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 5794649453,
+  "lat": 41.8877965,
+  "lon": -87.7060960,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "345",
+    "addr:postcode": "60624",
+    "addr:state": "IL",
+    "addr:street": "North Kedzie Avenue",
+    "fee": "no",
+    "name": "345 Gallery",
+    "phone": "+1-872-444-5544",
+    "tourism": "gallery",
+    "website": "https://www.345artgallery.com"
+  }
+},
+{
+  "type": "node",
+  "id": 5905978457,
+  "lat": 41.8278837,
+  "lon": -87.8200100,
+  "tags": {
+    "addr:city": "Riverside",
+    "addr:housenumber": "10",
+    "addr:postcode": "60546",
+    "addr:state": "IL",
+    "addr:street": "Pine Avenue",
+    "name": "Riverside Historical Museum",
+    "opening_hours": "Sa 10:00-14:00",
+    "operator": "Riverside Historical Commission",
+    "tourism": "museum",
+    "website": "http://www.riversidemuseum.net"
+  }
+},
+{
+  "type": "node",
+  "id": 6107271183,
+  "lat": 41.7942693,
+  "lon": -87.6180340,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "329",
+    "addr:postcode": "60637",
+    "addr:state": "IL",
+    "addr:street": "East Garfield Boulevard",
+    "amenity": "arts_centre",
+    "name": "Green Line Performing Arts Center",
+    "website": "https://arts.uchicago.edu/apl/glpac"
+  }
+},
+{
+  "type": "node",
+  "id": 6125250112,
+  "lat": 41.8580724,
+  "lon": -87.6569435,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1210",
+    "addr:postcode": "60608",
+    "addr:state": "IL",
+    "addr:street": "West 18th Street",
+    "name": "Prospectus Art Gallery",
+    "phone": "+1 312-733-6132",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 6179056467,
+  "lat": 41.8846303,
+  "lon": -87.6253558,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "72",
+    "addr:postcode": "60601",
+    "addr:state": "IL",
+    "addr:street": "East Randolph Street",
+    "fee": "no",
+    "name": "Expo 72",
+    "opening_hours": "24/7",
+    "operator": "Chicago Department of Cultural Affairs and Special Events (DCASE)",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 6332297187,
+  "lat": 41.8095479,
+  "lon": -87.6148147,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "436",
+    "addr:postcode": "60615",
+    "addr:state": "IL",
+    "addr:street": "East 47th Street",
+    "name": "Gallery Guichard",
+    "phone": "+1 773-791-7003",
+    "tourism": "gallery",
+    "website": "https://www.galleryguichard.com"
+  }
+},
+{
+  "type": "node",
+  "id": 6423952898,
+  "lat": 41.8880131,
+  "lon": -87.6236228,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "111",
+    "addr:postcode": "60601",
+    "addr:state": "IL",
+    "addr:street": "East Wacker Drive",
+    "fee": "yes",
+    "museum": "local",
+    "name": "Chicago Architecture Center",
+    "opening_hours": "Su-Tu 10:00-17:00; We-Sa 10:00-19:00",
+    "operator": "Chicago Architecture Foundation",
+    "operator:type": "public",
+    "tourism": "museum",
+    "url": "http://www.architecture.org/",
+    "website": "https://www.architecture.org/",
+    "wheelchair": "yes",
+    "wikidata": "Q2963292",
+    "wikipedia": "en:Chicago Architecture Center"
+  }
+},
+{
+  "type": "node",
+  "id": 6776061424,
+  "lat": 41.8958968,
+  "lon": -87.6702130,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1709",
+    "addr:postcode": "60622",
+    "addr:state": "IL",
+    "addr:street": "West Chicago Avenue",
+    "name": "Western Exhibitions",
+    "tourism": "gallery",
+    "website": "https://westernexhibitions.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 6776086443,
+  "lat": 41.8958971,
+  "lon": -87.6702858,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1711",
+    "addr:postcode": "60622",
+    "addr:state": "IL",
+    "addr:street": "West Chicago Avenue",
+    "name": "Rhona Hoffman Gallery",
+    "phone": "+1 312-455-1990",
+    "tourism": "gallery",
+    "website": "https://www.rhoffmangallery.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6872477634,
+  "lat": 41.9316462,
+  "lon": -87.7113805,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2775",
+    "addr:postcode": "60647",
+    "addr:state": "IL",
+    "addr:street": "North Milwaukee Avenue",
+    "name": "All Star Press",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 7118225610,
+  "lat": 41.9030806,
+  "lon": -87.6663300,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1180",
+    "addr:postcode": "60642",
+    "addr:state": "IL",
+    "addr:street": "North Milwaukee Avenue",
+    "name": "Young Chicago Authors",
+    "tourism": "gallery",
+    "website": "https://youngchicagoauthors.org"
+  }
+},
+{
+  "type": "node",
+  "id": 7862544202,
+  "lat": 41.8900345,
+  "lon": -87.6694210,
+  "tags": {
+    "addr:housenumber": "437",
+    "addr:street": "North Paulina Street",
+    "name": "Marianne Ibrahim Gallery",
+    "phone": "+13128775436",
+    "tourism": "gallery",
+    "website": "https://marianneibrahim.com"
+  }
+},
+{
+  "type": "node",
+  "id": 7874287865,
+  "lat": 41.8914720,
+  "lon": -87.6092029,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "700",
+    "addr:postcode": "60611",
+    "addr:state": "IL",
+    "addr:street": "East Grand Avenue",
+    "museum": "children",
+    "name": "Chicago Children's Museum",
+    "opening_hours:covid19": "closed",
+    "tourism": "museum",
+    "website": "https://www.chicagochildrensmuseum.org/",
+    "wheelchair": "yes",
+    "wikidata": "Q2963300",
+    "wikipedia": "en:Chicago Children's Museum"
+  }
+},
+{
+  "type": "node",
+  "id": 8175324612,
+  "lat": 41.8523254,
+  "lon": -87.7196717,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:country": "US",
+    "addr:housenumber": "2111",
+    "addr:postcode": "60623",
+    "addr:state": "IL",
+    "addr:street": "South Hamlin Avenue",
+    "amenity": "arts_centre",
+    "name": "Firehouse Community Arts Center of Chicago",
+    "website": "https://thefcac.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 8175562210,
+  "lat": 41.7789648,
+  "lon": -87.6928242,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:country": "US",
+    "addr:housenumber": "2747",
+    "addr:postcode": "60629",
+    "addr:state": "IL",
+    "addr:street": "West 63rd Street",
+    "amenity": "arts_centre",
+    "name": "IMAN Beloved Community Ceramics Studio",
+    "website": "https://imancentral.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 8175712870,
+  "lat": 41.8537493,
+  "lon": -87.7075347,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:country": "US",
+    "addr:housenumber": "1957",
+    "addr:postcode": "60623",
+    "addr:state": "IL",
+    "addr:street": "South Spaulding Avenue",
+    "amenity": "arts_centre",
+    "name": "Chicago Urban Art Retreat Center",
+    "phone": "+1-773-542-9126",
+    "website": "https://www.urbanartretreat.com"
+  }
+},
+{
+  "type": "node",
+  "id": 8175731507,
+  "lat": 41.8713868,
+  "lon": -87.6961809,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:country": "US",
+    "addr:housenumber": "750",
+    "addr:postcode": "60612",
+    "addr:state": "IL",
+    "addr:street": "South California Avenue",
+    "amenity": "arts_centre",
+    "name": "Art West Chicago",
+    "website": "https://www.artwestchicago.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 8520355484,
+  "lat": 41.8946070,
+  "lon": -87.6840067,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2249",
+    "addr:postcode": "60612",
+    "addr:state": "IL",
+    "addr:street": "West Superior Street",
+    "contact:facebook": "https://www.facebook.com/UkrainianNationalMuseum/",
+    "contact:instagram": "https://www.instagram.com/Ukrainiannationalmuseum/",
+    "email": "info@ukrainiannationalmuseum.org",
+    "name": "Ukrainian National Museum",
+    "name:en": "Ukrainian National Museum",
+    "name:uk": "Український національний музей",
+    "opening_hours": "Th-Su 11:00-16:00",
+    "phone": "+1 312 421 8020",
+    "tourism": "museum",
+    "website": "https://ukrainiannationalmuseum.org/",
+    "wikidata": "Q7878483",
+    "wikipedia": "en:Ukrainian National Museum"
+  }
+},
+{
+  "type": "node",
+  "id": 8910095375,
+  "lat": 41.8868372,
+  "lon": -87.6815231,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2156",
+    "addr:postcode": "60612",
+    "addr:state": "IL",
+    "addr:street": "West Fulton Street",
+    "email": "info@corbettvsdempsey.com",
+    "name": "Corbett vs. Dempsey",
+    "opening_hours": "Tu-Sa 10:00-17:00",
+    "phone": "+1-773-278-1664",
+    "tourism": "gallery",
+    "website": "https://www.corbettvsdempsey.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 8944618048,
+  "lat": 41.8143737,
+  "lon": -87.8719539,
+  "tags": {
+    "name": "La Grange Art League Gallery",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 8978674855,
+  "lat": 41.8830605,
+  "lon": -87.6268430,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "25",
+    "addr:postcode": "60602",
+    "addr:state": "IL",
+    "addr:street": "East Washington Street",
+    "air_conditioning": "yes",
+    "fee": "yes",
+    "museum": "art",
+    "name": "Museum of Illusions",
+    "tourism": "museum",
+    "website": "https://moichicago.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 9111624405,
+  "lat": 41.8558929,
+  "lon": -87.6236350,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1925",
+    "addr:postcode": "60616",
+    "addr:state": "IL",
+    "addr:street": "South Michigan Avenue",
+    "contact:phone": "+1-312-929-3911",
+    "email": "info@saichicago.org",
+    "name": "South Asia Institute",
+    "opening_hours": "by appointment; Th-Sa 11:00-18:00",
+    "tourism": "gallery",
+    "website": "https://www.saichicago.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 9793701292,
+  "lat": 41.8272625,
+  "lon": -87.8522526,
+  "tags": {
+    "name": "The Compassion Factory",
+    "operator": "Compassion United Methodist Church",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 9850272301,
+  "lat": 41.8572813,
+  "lon": -87.6464610,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1827",
+    "addr:postcode": "60608",
+    "addr:state": "IL",
+    "addr:street": "South Halsted Street",
+    "amenity": "arts_centre",
+    "name": "Strewn",
+    "website": "https://www.strewnchicago.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 9850357044,
+  "lat": 41.8572034,
+  "lon": -87.6464658,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1829",
+    "addr:postcode": "60608",
+    "addr:state": "IL",
+    "addr:street": "South Halsted Street",
+    "amenity": "arts_centre",
+    "name": "Art of Imagination",
+    "phone": "+1-773-632-8553",
+    "website": "https://artofimagination.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 9950117758,
+  "lat": 41.8559404,
+  "lon": -87.6467837,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1926",
+    "addr:postcode": "60608",
+    "addr:state": "IL",
+    "addr:street": "South Halsted Street",
+    "name": "Chicago Art Department",
+    "tourism": "gallery",
+    "website": "https://www.chicagoartdepartment.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 10067042360,
+  "lat": 41.8962527,
+  "lon": -87.6679627,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1612",
+    "addr:postcode": "60622",
+    "addr:state": "IL",
+    "addr:street": "West Chicago Avenue",
+    "email": "info@patrongallery.com",
+    "name": "Patron Gallery",
+    "opening_hours": "Tu-Sa 11:00-18:00",
+    "phone": "+1 312-846-1500",
+    "tourism": "gallery",
+    "website": "https://patrongallery.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 10198367167,
+  "lat": 41.7982916,
+  "lon": -87.5952387,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5338",
+    "addr:postcode": "60615",
+    "addr:state": "IL",
+    "addr:street": "South Kimbark Avenue",
+    "amenity": "arts_centre",
+    "email": "4thwardprojectspace@gmail.com",
+    "name": "4th Ward",
+    "opening_hours": "\"By Appointment\"",
+    "website": "https://www.4wps.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 10563385713,
+  "lat": 41.8576447,
+  "lon": -87.6676616,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1637",
+    "addr:postcode": "60608",
+    "addr:state": "IL",
+    "addr:street": "West 18th Street",
+    "amenity": "arts_centre",
+    "name": "Pilsen Arts Community House"
+  }
+},
+{
+  "type": "node",
+  "id": 10659667678,
+  "lat": 42.0068234,
+  "lon": -87.6662477,
+  "tags": {
+    "amenity": "arts_centre",
+    "check_date": "2026-01-25",
+    "name": "PO Box Collective"
+  }
+},
+{
+  "type": "node",
+  "id": 10873137225,
+  "lat": 41.8980264,
+  "lon": -87.6220778,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "835",
+    "addr:postcode": "60611",
+    "addr:state": "IL",
+    "addr:street": "North Michigan Avenue",
+    "museum": "local",
+    "name": "Chicago Sports Museum",
+    "tourism": "museum",
+    "website": "https://www.chicagosportsmuseum.com/",
+    "wikidata": "Q24037234",
+    "wikipedia": "en:Chicago Sports Museum"
+  }
+},
+{
+  "type": "node",
+  "id": 10945307458,
+  "lat": 41.8783753,
+  "lon": -87.6358062,
+  "tags": {
+    "level": "-2",
+    "museum": "art",
+    "name": "Color Factory",
+    "tourism": "museum",
+    "website": "https://www.colorfactory.co/locations/chicago"
+  }
+},
+{
+  "type": "node",
+  "id": 10958109344,
+  "lat": 41.8801592,
+  "lon": -87.6246747,
+  "tags": {
+    "fee": "no",
+    "name": "Iarca",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 10958109386,
+  "lat": 41.8806197,
+  "lon": -87.6246632,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "104",
+    "addr:postcode": "60603",
+    "addr:state": "IL",
+    "addr:street": "South Michigan Avenue",
+    "contact:phone": "+1-312-374-9333",
+    "contact:website": "http://www.pritzkermilitary.org/",
+    "museum": "military",
+    "name": "Pritzker Military Museum & Library",
+    "name:etymology:wikidata": "Q15929656",
+    "name:etymology:wikipedia": "en:Jennifer Pritzker",
+    "opening_hours": "Mo-Sa 10:00-16:00; Tu-Th 10:00-18:00; Su 12:00-16:00",
+    "operator": "Colonel IL James N Pritzker Library for the Citizen Soldier",
+    "operator:type": "private_non_profit",
+    "tourism": "museum",
+    "website": "https://www.pritzkermilitary.org/",
+    "wikidata": "Q588030",
+    "wikipedia": "en:Pritzker Military Museum & Library"
+  }
+},
+{
+  "type": "node",
+  "id": 11108815780,
+  "lat": 41.8229896,
+  "lon": -87.8732415,
+  "tags": {
+    "museum": "history",
+    "name": "La Grange Park Fire History Museum",
+    "operator": "La Grange Park Fire History",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "node",
+  "id": 11158104112,
+  "lat": 41.8809718,
+  "lon": -87.6869509,
+  "tags": {
+    "addr:housenumber": "2411",
+    "addr:street": "West Madison Street",
+    "check_date": "2023-08-30",
+    "name": "Legendary Art Gallery",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 11158104313,
+  "lat": 41.8813155,
+  "lon": -87.6878952,
+  "tags": {
+    "addr:housenumber": "2436",
+    "addr:street": "West Madison Street",
+    "check_date": "2023-08-30",
+    "name": "DragonFLY Gallert & Creative Spaces",
+    "tourism": "gallery",
+    "website": "https://www.dragonflygallery.space/"
+  }
+},
+{
+  "type": "node",
+  "id": 11165334205,
+  "lat": 41.8689142,
+  "lon": -87.6261147,
+  "tags": {
+    "name": "Glass Curtain Gallery",
+    "operator": "Columbia College of Chicago",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 11230141538,
+  "lat": 41.8861536,
+  "lon": -87.6585504,
+  "tags": {
+    "addr:housenumber": "219",
+    "addr:street": "North Elizabeth Street",
+    "name": "Kavi Gupta Gallery",
+    "name:en": "Kavi Gupta",
+    "tourism": "gallery",
+    "website": "https://kavigupta.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 11230141539,
+  "lat": 41.8959014,
+  "lon": -87.6664750,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1541",
+    "addr:postcode": "60622",
+    "addr:state": "IL",
+    "addr:street": "West Chicago Avenue",
+    "name": "Povos",
+    "tourism": "gallery",
+    "website": "https://povoschicago.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 11234336986,
+  "lat": 41.9525821,
+  "lon": -87.6513027,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "841",
+    "addr:postcode": "60613",
+    "addr:state": "IL",
+    "addr:street": "West Sheridan Road",
+    "amenity": "arts_centre",
+    "check_date": "2023-10-02",
+    "name": "Shine Bright In Life! Healing Arts Center",
+    "phone": "+1 773-537-5317",
+    "website": "https://www.shinebrightinlife.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 11234516056,
+  "lat": 41.9579269,
+  "lon": -87.6525114,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "4139",
+    "addr:postcode": "60613",
+    "addr:state": "IL",
+    "addr:street": "North Broadway",
+    "amenity": "arts_centre",
+    "check_date": "2023-10-02",
+    "name": "Pride Arts Center"
+  }
+},
+{
+  "type": "node",
+  "id": 11246804737,
+  "lat": 41.8507188,
+  "lon": -87.6582070,
+  "tags": {
+    "addr:housenumber": "2233",
+    "addr:street": "South Throop Street",
+    "email": "hello@manacontemporary.com",
+    "name": "Mana Contemporary",
+    "opening_hours": "Mo-Fr 11:00-17:00",
+    "tourism": "gallery",
+    "website": "https://www.manacontemporary.com/visit/chicago/"
+  }
+},
+{
+  "type": "node",
+  "id": 11262787237,
+  "lat": 41.8939321,
+  "lon": -87.6515368,
+  "tags": {
+    "email": "artdesk@veryseriousgallery.com",
+    "name": "A very Serious Gallery",
+    "opening_hours": "We, Fr-Sa 12:00-17:00; Th 13:00-20:00",
+    "tourism": "gallery",
+    "website": "https://veryseriousgallery.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 11926344869,
+  "lat": 41.9560508,
+  "lon": -87.7229503,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "4146",
+    "addr:postcode": "60618",
+    "addr:state": "IL",
+    "addr:street": "North Elston Avenue",
+    "fee": "no",
+    "level": "2",
+    "name": "Color Club",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 11926786464,
+  "lat": 41.9561052,
+  "lon": -87.7229748,
+  "tags": {
+    "fee": "no",
+    "level": "0",
+    "name": "Ruschman",
+    "opening_hours": "\"Wednesday-Saturday by Appointment\"",
+    "tourism": "gallery",
+    "website": "https://www.ruschman.blue",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12060493283,
+  "lat": 41.8550932,
+  "lon": -87.6463776,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2007",
+    "addr:postcode": "60608",
+    "addr:state": "IL",
+    "addr:street": "South Halsted Street",
+    "name": "Children's Museum of Art and Social Justice",
+    "tourism": "museum",
+    "website": "https://kippchicago.org/museum/"
+  }
+},
+{
+  "type": "node",
+  "id": 12083308239,
+  "lat": 41.8805250,
+  "lon": -87.6559982,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1130",
+    "addr:postcode": "60607",
+    "addr:state": "IL",
+    "addr:street": "West Monroe Street",
+    "check_date": "2024-07-30",
+    "museum": "art",
+    "name": "WNDR Museum",
+    "tourism": "museum",
+    "website": "https://wndrmuseum.com"
+  }
+},
+{
+  "type": "node",
+  "id": 12163830601,
+  "lat": 41.9248020,
+  "lon": -87.7152147,
+  "tags": {
+    "name": "M. LeBlanc",
+    "outdoor_seating": "no",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 12187064588,
+  "lat": 41.9620679,
+  "lon": -87.6662477,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "4410",
+    "addr:postcode": "60640",
+    "addr:state": "IL",
+    "addr:street": "North Clark Street",
+    "name": "The Haitian American Museum of Chicago",
+    "phone": "+17732131869",
+    "tourism": "museum",
+    "website": "https://www.hamoc.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 12232127242,
+  "lat": 41.9643626,
+  "lon": -87.6856072,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "4541",
+    "addr:postcode": "60625",
+    "addr:state": "IL",
+    "addr:street": "North Lincoln Avenue",
+    "amenity": "arts_centre",
+    "name": "Bunny Ears Art House",
+    "phone": "+1 773-234-2633",
+    "website": "https://www.bunnyearsart.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 12279089891,
+  "lat": 41.8872905,
+  "lon": -87.7093796,
+  "tags": {
+    "addr:housenumber": "331!",
+    "addr:street": "West Carroll Avenue",
+    "name": "Julius Caesar Chicago",
+    "tourism": "gallery",
+    "website": "https://www.juliuscaesarchicago.net/"
+  }
+},
+{
+  "type": "node",
+  "id": 12282038373,
+  "lat": 41.8315361,
+  "lon": -87.6566736,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1200",
+    "addr:postcode": "60609",
+    "addr:state": "IL",
+    "addr:street": "West 35th Street",
+    "museum": "transport",
+    "name": "Chicago Maritime Museum",
+    "opening_hours": "Tu-Su 10:00-16:00",
+    "tourism": "museum",
+    "website": "https://www.chicagomaritimemuseum.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 12405238495,
+  "lat": 41.8404803,
+  "lon": -87.7179798,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2801",
+    "addr:postcode": "60623",
+    "addr:state": "IL",
+    "addr:street": "South Ridgeway Avenue",
+    "amenity": "arts_centre",
+    "name": "Yollocalli Arts Reach",
+    "opening_hours": "Mo-Fr 12:00-18:00",
+    "phone": "+17738231065",
+    "website": "https://yollocalli.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 12593015674,
+  "lat": 41.8199214,
+  "lon": -87.8806874,
+  "tags": {
+    "access": "private",
+    "name": "Nettie J. McKinnon Art Gallery",
+    "tourism": "gallery",
+    "website": "https://www.dist102.k12.il.us/page/mckinnon-art-gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 12786492801,
+  "lat": 41.9025711,
+  "lon": -87.6266011,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "44",
+    "addr:postcode": "60611",
+    "addr:state": "IL",
+    "addr:street": "East Cedar Street",
+    "contact:instagram": "ivory_gate_gallery",
+    "name": "Ivory Gate Gallery",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 12867032643,
+  "lat": 41.8741778,
+  "lon": -87.7944085,
+  "tags": {
+    "addr:city": "Oak Park",
+    "addr:housenumber": "803",
+    "addr:postcode": "60304",
+    "addr:state": "IL",
+    "addr:street": "Van Buren Street",
+    "amenity": "arts_centre",
+    "name": "Creative Minds Center of the Arts",
+    "website": "https://www.tealastampley.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 12941177780,
+  "lat": 41.8946075,
+  "lon": -87.6365944,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "325",
+    "addr:postcode": "60654",
+    "addr:state": "IL",
+    "addr:street": "West Huron Street",
+    "contact:email": "info@zollalieberman.com",
+    "contact:phone": "+1 312-944-1990",
+    "name": "Zolla/Libermann Gallery",
+    "opening_hours": "Tu-Fr 10:00-17:00; Sa 11:00-17:00",
+    "tourism": "gallery",
+    "website": "https://www.zollaliebermangallery.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 12941635954,
+  "lat": 41.7421490,
+  "lon": -87.8592244,
+  "tags": {
+    "fee": "no",
+    "name": "Willow Springs Historical Society",
+    "tourism": "museum",
+    "website": "https://facebook.com/groups/WillowSpringsHistoricalSociety"
+  }
+},
+{
+  "type": "node",
+  "id": 12942506201,
+  "lat": 41.8896198,
+  "lon": -87.6722325,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1801",
+    "addr:postcode": "60622",
+    "addr:state": "IL",
+    "addr:street": "West Hubbard Street",
+    "email": "info@secristbeach.com",
+    "name": "SECRIST / BEACH",
+    "phone": "+1-312-212-8888",
+    "tourism": "gallery",
+    "website": "https://secristbeach.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 12990167037,
+  "lat": 41.8779887,
+  "lon": -87.6320684,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "141",
+    "addr:postcode": "60604",
+    "addr:state": "IL",
+    "addr:street": "West Jackson Boulevard",
+    "air_conditioning": "yes",
+    "fee": "no",
+    "museum": "history",
+    "name": "Chicago Board of Trade Building Museum",
+    "opening_hours": "Mo-Fr 10:00-16:00",
+    "tourism": "museum",
+    "website": "https://www.cbotbuilding.com/chicago-board-of-trade-building-museum/"
+  }
+},
+{
+  "type": "node",
+  "id": 13004372864,
+  "lat": 41.8977496,
+  "lon": -87.6871153,
+  "tags": {
+    "name": "Patient Info",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 13201205528,
+  "lat": 41.8305279,
+  "lon": -87.6512007,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "3500",
+    "addr:postcode": "60609",
+    "addr:state": "IL",
+    "addr:street": "South Morgan Street",
+    "addr:unit": "3F",
+    "museum": "art",
+    "name": "Heritage Museum of Asian Art",
+    "tourism": "museum",
+    "website": "https://heritageasianart.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 13233524901,
+  "lat": 41.9822682,
+  "lon": -87.6683469,
+  "tags": {
+    "addr:housenumber": "5517",
+    "addr:postcode": "60640",
+    "addr:street": "North Clark Street",
+    "contact:facebook": "eventhorizongallery",
+    "contact:instagram": "eventhorizongallery",
+    "email": "gallerist@eventhorizongallery.com",
+    "level": "0",
+    "name": "Event Horizon Gallery & VR Lounge",
+    "phone": "+1 224-409-9699",
+    "tourism": "gallery",
+    "website": "https://eventhorizongallery.square.site/"
+  }
+},
+{
+  "type": "node",
+  "id": 13265441628,
+  "lat": 41.9249194,
+  "lon": -87.6551572,
+  "tags": {
+    "name": "Richardson Art Gallery",
+    "operator": "DePaul University",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 13395760105,
+  "lat": 41.8828847,
+  "lon": -87.6490376,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "835",
+    "addr:postcode": "60607-2763",
+    "addr:state": "IL",
+    "addr:street": "West Washington Boulevard",
+    "check_date": "2025-12-22",
+    "contact:instagram": "https://www.instagram.com/kavigupta_",
+    "currency:XBT": "yes",
+    "name": "Kavi Gupta Gallery",
+    "opening_hours": "+1-708-480-2882",
+    "payment:lightning": "yes",
+    "payment:lightning:operator": "square",
+    "payment:lightning_contactless": "no",
+    "payment:onchain": "no",
+    "tourism": "gallery",
+    "website": "https://kavigupta.com"
+  }
+},
+{
+  "type": "node",
+  "id": 13422056101,
+  "lat": 41.8132923,
+  "lon": -87.8784533,
+  "tags": {
+    "addr:housenumber": "12-16",
+    "addr:street": "South Stone Avenue",
+    "name": "Fine Art Gallery",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 13574784342,
+  "lat": 41.9152208,
+  "lon": -87.6553058,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1871",
+    "addr:state": "IL",
+    "addr:street": "North Clybourn Avenue",
+    "name": "gallery 1871",
+    "phone": "+1-773-248-3100",
+    "tourism": "gallery",
+    "website": "https://www.chicagoartsource.com"
+  }
+},
+{
+  "type": "node",
+  "id": 13656590196,
+  "lat": 41.8846038,
+  "lon": -87.6393207,
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "440",
+    "addr:postcode": "60606",
+    "addr:state": "IL",
+    "addr:street": "West Randolph Street",
+    "museum": "technology",
+    "name": "Museum of Broadcast Communications",
+    "tourism": "museum",
+    "website": "https://www.museum.tv/",
+    "wikidata": "Q840284",
+    "wikipedia": "en:Museum of Broadcast Communications"
+  }
+},
+{
+  "type": "node",
+  "id": 13694251445,
+  "lat": 41.7322922,
+  "lon": -87.8758031,
+  "tags": {
+    "addr:housenumber": "8695",
+    "addr:postcode": "60480",
+    "addr:street": "Archer Avenue",
+    "addr:unit": "18-19",
+    "amenity": "arts_centre",
+    "contact:instagram": "https://www.instagram.com/ab.er.rant_",
+    "level": "2",
+    "name": "Aberrant & Co. Studio",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 23986958,
+  "center": {
+    "lat": 41.9267866,
+    "lon": -87.6351944
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2430",
+    "addr:postcode": "60614",
+    "addr:state": "IL",
+    "addr:street": "North Cannon Drive",
+    "addr:street:name": "Cannon",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Drive",
+    "building": "museum",
+    "charge": "9 USD",
+    "charge:conditional": "6 USD @ (age>=3 AND age<=12)",
+    "chicago:building_id": "821490",
+    "contact:facebook": "https://www.facebook.com/thenaturemuseum",
+    "fee": "yes",
+    "museum": "nature",
+    "name": "The Peggy Notebaert Nature Museum",
+    "opening_hours": "Mo-Fr 09:00-17:00; Sa-Su 10:00-17:00",
+    "tourism": "museum",
+    "website": "https://www.naturemuseum.org/",
+    "wikidata": "Q7160706",
+    "wikipedia": "en:Peggy Notebaert Nature Museum"
+  }
+},
+{
+  "type": "way",
+  "id": 23987046,
+  "center": {
+    "lat": 41.9119908,
+    "lon": -87.6315209
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:country": "US",
+    "addr:housenumber": "1601",
+    "addr:postcode": "60614",
+    "addr:state": "IL",
+    "addr:street": "North Clark Street",
+    "addr:street:name": "Clark",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Street",
+    "building": "commercial",
+    "building:levels": "3",
+    "check_date:opening_hours": "2023-02-17",
+    "chicago:building_id": "298474",
+    "ele": "182",
+    "fee": "yes",
+    "gnis:feature_id": "1826566",
+    "museum": "history",
+    "name": "Chicago History Museum",
+    "opening_hours": "Tu-Sa 09:45-16:30; Su 11:45-17:00; Dec 24,31, 09:30-14:30, Jul 04 12:00-16:30; Jan 01,Dec 24 off",
+    "polling_station": "yes",
+    "source": "USGS Geonames",
+    "tourism": "museum",
+    "website": "https://www.chicagohistory.org/",
+    "wheelchair": "yes",
+    "wikidata": "Q2963315",
+    "wikipedia": "en:Chicago History Museum"
+  }
+},
+{
+  "type": "way",
+  "id": 24800223,
+  "center": {
+    "lat": 41.8972189,
+    "lon": -87.6212206
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "220",
+    "addr:postcode": "60611",
+    "addr:state": "IL",
+    "addr:street": "East Chicago Avenue",
+    "addr:street:name": "Chicago",
+    "addr:street:prefix": "East",
+    "addr:street:type": "Avenue",
+    "building": "commercial",
+    "building:levels": "5",
+    "chicago:building_id": "335431",
+    "fee": "yes",
+    "museum": "art",
+    "name": "Museum of Contemporary Art",
+    "phone": "+1-312-280-2660",
+    "tourism": "museum",
+    "website": "https://mcachicago.org/",
+    "wheelchair": "yes",
+    "wikidata": "Q118142",
+    "wikipedia": "en:Museum of Contemporary Art Chicago"
+  }
+},
+{
+  "type": "way",
+  "id": 24825537,
+  "center": {
+    "lat": 41.8662111,
+    "lon": -87.6168966
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1400",
+    "addr:postcode": "60605",
+    "addr:state": "IL",
+    "addr:street": "South Lake Shore Drive",
+    "addr:street:name": "Lake Shore",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Drive",
+    "air_conditioning": "yes",
+    "alt_name": "Field Museum of Natural History",
+    "building": "museum",
+    "building:levels": "3",
+    "chicago:building_id": "371641",
+    "ele": "185",
+    "fee": "yes",
+    "gnis:feature_id": "414306",
+    "museum": "nature",
+    "name": "Field Museum",
+    "name:etymology:wikidata": "Q1902746",
+    "name:etymology:wikipedia": "en:Marshall Field",
+    "opening_hours": "Mo-Su 09:00-17:00",
+    "opening_hours:covid19": "Th-Mo 09:00-17:00",
+    "phone": "+1 312-922-9410",
+    "tourism": "museum",
+    "website": "https://www.fieldmuseum.org/",
+    "wheelchair": "yes",
+    "wikidata": "Q1122595",
+    "wikipedia": "en:Field Museum of Natural History"
+  }
+},
+{
+  "type": "way",
+  "id": 24826230,
+  "center": {
+    "lat": 41.7907605,
+    "lon": -87.5829373
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5700",
+    "addr:postcode": "60637",
+    "addr:state": "IL",
+    "addr:street": "South Lake Shore Drive",
+    "addr:street:name": "Lake Shore",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Drive",
+    "building": "museum",
+    "chicago:building_id": "491095",
+    "fee": "yes",
+    "gnis:feature_id": "414260",
+    "museum": "science",
+    "name": "Griffin Museum of Science and Industry",
+    "name:etymology:wikidata": "Q3195170",
+    "name:etymology:wikipedia": "en:Kenneth C. Griffin",
+    "old_name": "Museum of Science and Industry",
+    "opening_hours": "09:30-16:00; off \"Thanksgiving, Christmas Day\"; \"See website for hours around holidays\"",
+    "opening_hours:url": "https://www.msichicago.org/visit/museum-hours/",
+    "tourism": "museum",
+    "website": "https://www.msichicago.org/",
+    "wikidata": "Q1414079",
+    "wikipedia": "en:Museum of Science and Industry (Chicago)"
+  }
+},
+{
+  "type": "way",
+  "id": 25885716,
+  "center": {
+    "lat": 41.8940833,
+    "lon": -87.7996691
+  },
+  "tags": {
+    "addr:city": "Oak Park",
+    "addr:housenumber": "951",
+    "addr:postcode": "60302",
+    "addr:state": "IL",
+    "addr:street": "Chicago Avenue",
+    "architect": "Frank Lloyd Wright",
+    "building": "house",
+    "building:architecture": "prairie",
+    "ele": "192",
+    "gnis:feature_id": "1826899",
+    "name": "Frank Lloyd Wright Home and Studio",
+    "source": "USGS Geonames",
+    "tourism": "museum",
+    "website": "https://flwright.org/",
+    "wikidata": "Q3069681",
+    "wikipedia": "en:Frank Lloyd Wright Home and Studio"
+  }
+},
+{
+  "type": "way",
+  "id": 26558393,
+  "center": {
+    "lat": 42.0218042,
+    "lon": -87.7458133
+  },
+  "tags": {
+    "addr:city": "Skokie",
+    "addr:housenumber": "4650",
+    "addr:postcode": "60076",
+    "addr:state": "IL",
+    "addr:street": "Brummel Street",
+    "building": "public",
+    "museum": "nature",
+    "name": "Emily Oak Nature Center",
+    "operator": "Skokie Park District",
+    "operator:type": "public",
+    "tourism": "museum",
+    "website": "https://www.skokieparks.org/emily-oaks-nature-center/"
+  }
+},
+{
+  "type": "way",
+  "id": 33278354,
+  "center": {
+    "lat": 41.9617750,
+    "lon": -87.6735446
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "4401",
+    "addr:postcode": "60640",
+    "addr:state": "IL",
+    "addr:street": "North Ravenswood Avenue",
+    "addr:street:name": "Ravenswood",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Avenue",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "building:levels": "3",
+    "chicago:building_id": "125998",
+    "name": "Lillstreet Art Center",
+    "phone": "+1-773-769-4226",
+    "roof:shape": "flat",
+    "website": "https://lillstreet.com/",
+    "wikidata": "Q15961515",
+    "wikipedia": "en:Lillstreet Art Center"
+  }
+},
+{
+  "type": "way",
+  "id": 33769411,
+  "center": {
+    "lat": 41.7918722,
+    "lon": -87.6072653
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "740",
+    "addr:postcode": "60637",
+    "addr:state": "IL",
+    "addr:street": "East 56th Place",
+    "addr:street:name": "56th",
+    "addr:street:prefix": "East",
+    "addr:street:type": "Place",
+    "building": "museum",
+    "check_date:opening_hours": "2023-03-10",
+    "chicago:building_id": "489429",
+    "ele": "181",
+    "fee": "yes",
+    "gnis:feature_id": "1826196",
+    "museum": "history",
+    "name": "DuSable Black History Museum and Education Center",
+    "name:etymology:wikidata": "Q492555",
+    "name:etymology:wikipedia": "en:Jean Baptiste Point du Sable",
+    "old_name": "DuSable Museum of African-American History",
+    "opening_hours": "We-Su 11:00-16:00",
+    "source": "USGS Geonames",
+    "tourism": "museum",
+    "website": "https://www.dusablemuseum.org/",
+    "wikidata": "Q3040299",
+    "wikipedia": "en:DuSable Black History Museum and Education Center"
+  }
+},
+{
+  "type": "way",
+  "id": 143139313,
+  "center": {
+    "lat": 41.8034265,
+    "lon": -87.5867824
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5020",
+    "addr:postcode": "60615",
+    "addr:state": "IL",
+    "addr:street": "South Cornell Avenue",
+    "addr:street:name": "Cornell",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "amenity": "arts_centre",
+    "building": "yes",
+    "building:levels": "2",
+    "chicago:building_id": "454808",
+    "name": "Hyde Park Art Center",
+    "opening_hours": "Mo-Th 09:00-20:00; Fr-Sa 09:00-17:00; Su 12:00-17:00",
+    "phone": "+1 773-324-5520",
+    "website": "https://www.hydeparkart.org/",
+    "wheelchair": "yes",
+    "wikidata": "Q5953637"
+  }
+},
+{
+  "type": "way",
+  "id": 145208575,
+  "center": {
+    "lat": 41.8851114,
+    "lon": -87.6299284
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "170",
+    "addr:postcode": "60601",
+    "addr:state": "IL",
+    "addr:street": "North Dearborn Street",
+    "addr:street:name": "Dearborn",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Street",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "building:levels": "0",
+    "chicago:building_id": "814435",
+    "name": "Goodman Theatre Center",
+    "office": "educational_institution",
+    "website": "https://www.goodmantheatre.org/",
+    "wikidata": "Q5583472",
+    "wikipedia": "en:Goodman Theatre"
+  }
+},
+{
+  "type": "way",
+  "id": 147249816,
+  "center": {
+    "lat": 41.7942738,
+    "lon": -87.5875619
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5529",
+    "addr:postcode": "60637",
+    "addr:state": "IL",
+    "addr:street": "South Lake Park Avenue",
+    "building": "yes",
+    "chicago:building_id": "871253",
+    "ele": "181",
+    "gnis:feature_id": "1833072",
+    "museum": "history",
+    "name": "Hyde Park Historical Society Museum",
+    "source": "USGS Geonames",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 148902944,
+  "center": {
+    "lat": 41.8716506,
+    "lon": -87.6473980
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "800",
+    "addr:postcode": "60607",
+    "addr:state": "IL",
+    "addr:street": "South Halsted Street",
+    "addr:street:name": "Halsted",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Street",
+    "building": "house",
+    "building:levels": "3",
+    "building:material": "brick",
+    "chicago:building_id": "367517",
+    "ele": "181",
+    "gnis:feature_id": "1830847",
+    "museum": "history",
+    "name": "Jane Addams Hull-House Museum",
+    "ref": "JAH",
+    "roof:shape": "hipped",
+    "source": "USGS Geonames",
+    "tourism": "museum",
+    "website": "http://www.uic.edu/jaddams/hull/hull_house.html",
+    "wikidata": "Q1582905"
+  }
+},
+{
+  "type": "way",
+  "id": 150749377,
+  "center": {
+    "lat": 41.8570672,
+    "lon": -87.6218774
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1855",
+    "addr:postcode": "60616",
+    "addr:state": "IL",
+    "addr:street": "South Indiana Avenue",
+    "addr:street:name": "Indiana",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "building": "house",
+    "chicago:building_id": "378896",
+    "historic": "house",
+    "museum": "history",
+    "name": "Henry B. Clarke House",
+    "tourism": "museum",
+    "wikidata": "Q3132596",
+    "wikipedia": "en:Henry B. Clarke House"
+  }
+},
+{
+  "type": "way",
+  "id": 152586233,
+  "center": {
+    "lat": 41.7935122,
+    "lon": -87.6001865
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5550",
+    "addr:postcode": "60637",
+    "addr:state": "IL",
+    "addr:street": "South Greenwood Avenue",
+    "building": "university",
+    "museum": "art",
+    "name": "David and Alfred Smart Museum of Art",
+    "name:etymology:wikidata": "Q4424217",
+    "name:etymology:wikipedia": "en:David A. Smart",
+    "phone": "+1-773-702-0200",
+    "tourism": "museum",
+    "website": "https://smartmuseum.uchicago.edu/",
+    "wikidata": "Q3486881",
+    "wikipedia": "en:Smart Museum of Art"
+  }
+},
+{
+  "type": "way",
+  "id": 153291623,
+  "center": {
+    "lat": 41.8890241,
+    "lon": -87.6285862
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "360",
+    "addr:postcode": "60654",
+    "addr:state": "IL",
+    "addr:street": "North State Street",
+    "addr:street:name": "State",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Street",
+    "building": "commercial",
+    "building:levels": "4",
+    "chicago:building_id": "350825",
+    "museum": "history",
+    "name": "Illinois Holocaust Museum Presents Experience360",
+    "operator": "Illinois Holocaust Museum",
+    "operator:type": "private_non_profit",
+    "tourism": "museum",
+    "website": "https://www.ilholocaustmuseum.org/",
+    "wikidata": "Q445086",
+    "wikipedia": "en:Illinois Holocaust Museum and Education Center"
+  }
+},
+{
+  "type": "way",
+  "id": 157655071,
+  "center": {
+    "lat": 41.7906366,
+    "lon": -87.5984131
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1131-1135",
+    "addr:postcode": "60637",
+    "addr:state": "IL",
+    "addr:street": "East 57th Street",
+    "addr:street:name": "57th",
+    "addr:street:prefix": "East",
+    "addr:street:type": "Street",
+    "amenity": "arts_centre",
+    "building": "university",
+    "chicago:building_id": "884580",
+    "name": "Mandel Hall"
+  }
+},
+{
+  "type": "way",
+  "id": 162389116,
+  "center": {
+    "lat": 41.9206229,
+    "lon": -87.7330740
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2156",
+    "addr:postcode": "60639",
+    "addr:state": "IL",
+    "addr:street": "North Tripp Avenue",
+    "addr:street:name": "Tripp",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Avenue",
+    "building": "house",
+    "building:levels": "2",
+    "chicago:building_id": "277314",
+    "historic": "house",
+    "name": "Walt Disney Birthplace House",
+    "name:etymology:wikidata": "Q8704",
+    "name:etymology:wikimedia_commons": "File:Walt_Disney_1946.JPG",
+    "name:etymology:wikipedia": "en:Walt Disney",
+    "tourism": "museum",
+    "website": "https://www.thewaltdisneybirthplace.org/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 162462467,
+  "center": {
+    "lat": 41.9653234,
+    "lon": -87.7445686
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "4626",
+    "addr:postcode": "60630",
+    "addr:state": "IL",
+    "addr:street": "North Knox Avenue",
+    "addr:street:name": "Knox",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Avenue",
+    "building": "commercial",
+    "building:levels": "3",
+    "chicago:building_id": "114346",
+    "museum": "history",
+    "name": "Irish American Heritage Center",
+    "old_name": "Mayfair College",
+    "phone": "+1-773-282-7035",
+    "source": "https://forgottenchicago.com/forum/read.php?5,12539",
+    "tourism": "museum",
+    "website": "https://irish-american.org/",
+    "wikidata": "Q15961479",
+    "wikipedia": "en:Irish American Heritage Center"
+  }
+},
+{
+  "type": "way",
+  "id": 162712280,
+  "center": {
+    "lat": 41.9682835,
+    "lon": -87.7584824
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5216",
+    "addr:postcode": "60630",
+    "addr:state": "IL",
+    "addr:street": "West Lawrence Avenue",
+    "addr:street:name": "Lawrence",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Avenue",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "building:levels": "3",
+    "chicago:building_id": "844620",
+    "description": "The center houses multiple meeting, wedding, and party venues in addition to a large theater & lobby.",
+    "name": "Copernicus Center",
+    "name:etymology:wikidata": "Q619",
+    "name:etymology:wikipedia": "en:Nicolaus Copernicus",
+    "old_name": "Gateway Theater & mixed businesses",
+    "phone": "+1-773-777-8898",
+    "start_date": "1979",
+    "website": "https://copernicuscenter.org/",
+    "wheelchair": "yes",
+    "wikidata": "Q5527298",
+    "wikipedia": "en:Copernicus Center (Chicago, Illinois)"
+  }
+},
+{
+  "type": "way",
+  "id": 162713318,
+  "center": {
+    "lat": 41.9685131,
+    "lon": -87.7621518
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5415",
+    "addr:postcode": "60630",
+    "addr:state": "IL",
+    "addr:street": "West Higgins Avenue",
+    "addr:street:name": "Higgins",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Avenue",
+    "artwork_type": "painting",
+    "building": "yes",
+    "building:levels": "2",
+    "chicago:building_id": "105436",
+    "name": "Ed Paschke Art Center",
+    "name:etymology:wikidata": "Q3047197",
+    "name:etymology:wikimedia_commons": "File:EdPaschkeStudio.jpg",
+    "name:etymology:wikipedia": "en:Ed Paschke",
+    "source": "http://edpaschkeartcenter.org/",
+    "tourism": "gallery",
+    "website": "http://edpaschkeartcenter.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 163573566,
+  "center": {
+    "lat": 41.7746301,
+    "lon": -87.7229824
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "6500",
+    "addr:postcode": "60629",
+    "addr:state": "IL",
+    "addr:street": "South Pulaski Road",
+    "addr:street:name": "Pulaski",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Road",
+    "building": "commercial",
+    "building:levels": "2",
+    "check_date:opening_hours": "2023-03-10",
+    "chicago:building_id": "551016",
+    "fee": "yes",
+    "museum": "history",
+    "name": "Balzekas Museum of Lithuanian Culture",
+    "opening_hours": "Mo-Sa 10:00-16:00; Su 12:00-16:00; Dec 24-25 off; Jan 01 off; easter Su off",
+    "tourism": "museum",
+    "website": "https://balzekasmuseum.org/",
+    "wikidata": "Q4853170",
+    "wikipedia": "en:Balzekas Museum of Lithuanian Culture"
+  }
+},
+{
+  "type": "way",
+  "id": 163885103,
+  "center": {
+    "lat": 41.9103467,
+    "lon": -87.7089028
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "3252",
+    "addr:postcode": "60647",
+    "addr:state": "IL",
+    "addr:street": "West North Avenue",
+    "addr:street:name": "North",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Avenue",
+    "building": "yes",
+    "name": "Adds Donna",
+    "tourism": "gallery",
+    "website": "https://addsdonna.com/exhibitions/"
+  }
+},
+{
+  "type": "way",
+  "id": 163892668,
+  "center": {
+    "lat": 41.9285631,
+    "lon": -87.7119790
+  },
+  "tags": {
+    "addr:housenumber": "2609",
+    "addr:street": "North Kimball Avenue",
+    "addr:street:name": "Kimball",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Avenue",
+    "amenity": "arts_centre",
+    "building": "yes",
+    "chicago:building_id": "252792",
+    "name": "Aloft Circus Arts"
+  }
+},
+{
+  "type": "way",
+  "id": 163894591,
+  "center": {
+    "lat": 41.9355986,
+    "lon": -87.7171342
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "3004",
+    "addr:postcode": "60618",
+    "addr:state": "IL",
+    "addr:street": "North Elbridge Avenue",
+    "addr:street:name": "Elbridge",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Avenue",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "building:levels": "2",
+    "chicago:building_id": "227773",
+    "name": "Puerto Rican Arts Alliance",
+    "wikidata": "Q7258589",
+    "wikipedia": "en:Puerto Rican Arts Alliance"
+  }
+},
+{
+  "type": "way",
+  "id": 163896252,
+  "center": {
+    "lat": 41.9243607,
+    "lon": -87.7129825
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "3421",
+    "addr:postcode": "60647",
+    "addr:state": "IL",
+    "addr:street": "West Fullerton Avenue",
+    "addr:street:name": "Fullerton",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Avenue",
+    "amenity": "arts_centre",
+    "building": "yes",
+    "building:levels": "2",
+    "chicago:building_id": "265547",
+    "name": "Charnel House"
+  }
+},
+{
+  "type": "way",
+  "id": 164021897,
+  "center": {
+    "lat": 41.9879654,
+    "lon": -87.7243931
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5801",
+    "addr:postcode": "60646",
+    "addr:state": "IL",
+    "addr:street": "North Pulaski Road",
+    "addr:street:name": "Pulaski",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Road",
+    "building": "public",
+    "museum": "nature",
+    "name": "North Park Village Nature Center",
+    "tourism": "museum",
+    "website": "https://www.chicagoparkdistrict.com/parks-facilities/north-park-village-nature-center"
+  }
+},
+{
+  "type": "way",
+  "id": 165144292,
+  "center": {
+    "lat": 41.7987005,
+    "lon": -87.6845337
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5218",
+    "addr:postcode": "60609",
+    "addr:state": "IL",
+    "addr:street": "South Western Avenue",
+    "addr:street:name": "Western",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "building": "fire_station",
+    "building:levels": "2",
+    "museum": "history",
+    "name": "Fire Museum of Greater Chicago",
+    "opening_hours": "Sa 10:00-14:00",
+    "tourism": "museum",
+    "website": "https://firemuseumofgreaterchicago.org"
+  }
+},
+{
+  "type": "way",
+  "id": 181379030,
+  "center": {
+    "lat": 41.8770017,
+    "lon": -87.6468455
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "333",
+    "addr:postcode": "60661",
+    "addr:state": "IL",
+    "addr:street": "South Halsted Street",
+    "building": "commercial",
+    "building:levels": "3",
+    "museum": "history",
+    "name": "National Hellenic Museum",
+    "polling_station": "yes",
+    "tourism": "museum",
+    "wikidata": "Q6973035",
+    "wikipedia": "en:National Hellenic Museum"
+  }
+},
+{
+  "type": "way",
+  "id": 202372249,
+  "center": {
+    "lat": 41.8561735,
+    "lon": -87.6729928
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1852",
+    "addr:postcode": "60608",
+    "addr:state": "IL",
+    "addr:street": "West 19th Street",
+    "addr:street:name": "18th",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Street",
+    "building": "commercial",
+    "chicago:building_id": "836699",
+    "museum": "art",
+    "name": "National Museum of Mexican Art",
+    "not:brand:wikidata": "Q1424142",
+    "opening_hours": "Tu-Su 10:00-17:00",
+    "phone": "+1-312-738-1503",
+    "tourism": "museum",
+    "website": "https://www.nationalmuseumofmexicanart.org/",
+    "wikidata": "Q3336910",
+    "wikipedia": "en:National Museum of Mexican Art"
+  }
+},
+{
+  "type": "way",
+  "id": 206336182,
+  "center": {
+    "lat": 41.8896579,
+    "lon": -87.7008645
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:country": "US",
+    "addr:housenumber": "445",
+    "addr:postcode": "60612",
+    "addr:state": "IL",
+    "addr:street": "North Sacramento Boulevard",
+    "addr:street:name": "Sacramento",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Boulevard",
+    "building": "commercial",
+    "building:levels": "2",
+    "chicago:building_id": "350559",
+    "museum": "nature",
+    "name": "Chicago Center for Green Technology",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 209389536,
+  "center": {
+    "lat": 41.8959798,
+    "lon": -87.6851652
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2320",
+    "addr:postcode": "60622",
+    "addr:state": "IL",
+    "addr:street": "West Chicago Avenue",
+    "addr:street:name": "Chicago",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Avenue",
+    "building": "commercial",
+    "building:levels": "1",
+    "check_date": "2025-06-14",
+    "chicago:building_id": "339852",
+    "contact:facebook": "https://www.facebook.com/UIMArt/",
+    "contact:instagram": "https://www.facebook.com/UIMArt/",
+    "contact:linkedin": "https://www.linkedin.com/company/the-ukrainian-institute-of-modern-art-uima/",
+    "contact:youtube": "https://www.youtube.com/channel/UCN7ErHjNE3bXR_048Pr37Hw",
+    "email": "info@uima-chicago.org",
+    "fee": "yes",
+    "museum": "art",
+    "name": "Ukrainian Institute of Modern Art",
+    "name:en": "Ukrainian Institute of Modern Art",
+    "name:uk": "Український інститут модерного мистецтва",
+    "opening_hours": "We-Su 12:00-16:00",
+    "phone": "+1 773 227 5522",
+    "tourism": "museum",
+    "website": "https://uima-chicago.org/",
+    "wikidata": "Q3547881",
+    "wikipedia": "en:Ukrainian Institute of Modern Art"
+  }
+},
+{
+  "type": "way",
+  "id": 209476241,
+  "center": {
+    "lat": 41.9683467,
+    "lon": -87.6999538
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2831",
+    "addr:postcode": "60625",
+    "addr:state": "IL",
+    "addr:street": "West Lawrence Avenue",
+    "addr:street:name": "Lawrence",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Avenue",
+    "building": "commercial",
+    "building:levels": "2",
+    "chicago:building_id": "105392",
+    "museum": "history",
+    "name": "National Cambodian Heritage Museum",
+    "tourism": "museum",
+    "website": "https://www.cambodianmuseum.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 209597601,
+  "center": {
+    "lat": 41.6914550,
+    "lon": -87.6817870
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2407",
+    "addr:postcode": "60643",
+    "addr:state": "IL",
+    "addr:street": "West 111th Street",
+    "addr:street:name": "111th",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Street",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "chicago:building_id": "829384",
+    "ele": "202",
+    "gnis:feature_id": "426879",
+    "name": "Beverly Art Center",
+    "polling_station": "yes",
+    "source": "USGS Geonames",
+    "website": "https://beverlyartcenter.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 209606172,
+  "center": {
+    "lat": 41.7002983,
+    "lon": -87.6721123
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "10621",
+    "addr:postcode": "60643",
+    "addr:state": "IL",
+    "addr:street": "South Seeley Avenue",
+    "addr:street:name": "Seeley",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "building": "house",
+    "chicago:building_id": "749495",
+    "ele": "193",
+    "gnis:feature_id": "1832849",
+    "museum": "history",
+    "name": "Ridge Historical Society",
+    "source": "USGS Geonames",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 209783172,
+  "center": {
+    "lat": 41.8560624,
+    "lon": -87.6708003
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1756",
+    "addr:postcode": "60608",
+    "addr:state": "IL",
+    "addr:street": "West 19th Street",
+    "addr:street:name": "19th",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Street",
+    "building": "yes",
+    "building:levels": "3",
+    "chicago:building_id": "380799",
+    "name": "Pilsen Art House",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "way",
+  "id": 209904695,
+  "center": {
+    "lat": 41.9453535,
+    "lon": -87.6743154
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1800",
+    "addr:postcode": "60657",
+    "addr:state": "IL",
+    "addr:street": "West Cornelia Avenue",
+    "addr:street:name": "Cornelia",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Avenue",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "chicago:building_id": "185010",
+    "name": "Cornelia Arts Building",
+    "website": "https://www.corneliaartsbuilding.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 209942973,
+  "center": {
+    "lat": 41.9766738,
+    "lon": -87.6680620
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5211",
+    "addr:postcode": "60640",
+    "addr:state": "IL",
+    "addr:street": "North Clark Street",
+    "addr:street:name": "Clark",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Street",
+    "building": "commercial",
+    "building:facade:colour": "sandybrown",
+    "building:levels": "3",
+    "building:material": "brick",
+    "chicago:building_id": "74980",
+    "museum": "history",
+    "name": "Swedish American Museum",
+    "polling_station": "yes",
+    "tourism": "museum",
+    "wikidata": "Q7654581",
+    "wikipedia": "en:Swedish American Museum"
+  }
+},
+{
+  "type": "way",
+  "id": 209943355,
+  "center": {
+    "lat": 41.9796801,
+    "lon": -87.6700187
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5354-5358",
+    "addr:postcode": "60640",
+    "addr:state": "IL",
+    "addr:street": "North Ashland Avenue",
+    "addr:street:name": "Ashland",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Avenue",
+    "building": "commercial",
+    "building:levels": "2",
+    "chicago:building_id": "65748",
+    "fee": "no",
+    "museum": "history",
+    "name": "Edgewater Historical Society",
+    "opening_hours": "Sa,Su 13:00-16:00",
+    "tourism": "museum",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 209953009,
+  "center": {
+    "lat": 41.9986421,
+    "lon": -87.6683357
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "6418",
+    "addr:postcode": "60626",
+    "addr:state": "IL",
+    "addr:street": "North Greenview Avenue",
+    "addr:street:name": "Greenview",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Avenue",
+    "building": "commercial",
+    "building:levels": "1",
+    "check_date": "2024-12-20",
+    "chicago:building_id": "23864",
+    "fee": "no",
+    "museum": "art",
+    "name": "Leather Archives and Museum",
+    "phone": "+1 773-761-9200",
+    "tourism": "museum",
+    "website": "https://leatherarchives.org/",
+    "wikidata": "Q1435136",
+    "wikipedia": "en:Leather Archives & Museum"
+  }
+},
+{
+  "type": "way",
+  "id": 210167491,
+  "center": {
+    "lat": 41.8303263,
+    "lon": -87.6522910
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1029",
+    "addr:postcode": "60609",
+    "addr:state": "IL",
+    "addr:street": "West 35th Street",
+    "addr:street:name": "35th",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Street",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "building:levels": "4",
+    "chicago:building_id": "417974",
+    "name": "Zhou B Art Center",
+    "website": "https://www.zhoubartcenter.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 210308110,
+  "center": {
+    "lat": 41.8953748,
+    "lon": -87.6546037
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "756",
+    "addr:postcode": "60642",
+    "addr:state": "IL",
+    "addr:street": "North Milwaukee Avenue",
+    "addr:street:name": "Milwaukee",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Avenue",
+    "building": "yes",
+    "building:levels": "3",
+    "chicago:building_id": "868741",
+    "museum": "art",
+    "name": "Intuit: The Center for Intuitive and Outsider Art",
+    "tourism": "museum",
+    "website": "https://www.art.org/",
+    "wikidata": "Q6059089",
+    "wikipedia": "en:Intuit: The Center for Intuitive and Outsider Art"
+  }
+},
+{
+  "type": "way",
+  "id": 210320780,
+  "center": {
+    "lat": 41.9239553,
+    "lon": -87.6491338
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "800",
+    "addr:postcode": "60614",
+    "addr:state": "IL",
+    "addr:street": "West Belden Avenue",
+    "addr:street:name": "Belden",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Avenue",
+    "amenity": "arts_centre",
+    "building": "university",
+    "chicago:building_id": "265789",
+    "name": "Sasha and Eugene Jarvis Opera Hall"
+  }
+},
+{
+  "type": "way",
+  "id": 210521145,
+  "center": {
+    "lat": 41.7886356,
+    "lon": -87.6269224
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5810",
+    "addr:postcode": "60621",
+    "addr:state": "IL",
+    "addr:street": "South Lafayette Avenue",
+    "addr:street:name": "Lafayette",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "amenity": "arts_centre",
+    "building": "church",
+    "building:levels": "1",
+    "chicago:building_id": "501808",
+    "name": "Civic Arts Church",
+    "website": "https://www.sweetwaterfoundation.com/civic-arts-church"
+  }
+},
+{
+  "type": "way",
+  "id": 210523789,
+  "center": {
+    "lat": 41.7966895,
+    "lon": -87.6237368
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "5349",
+    "addr:postcode": "60615",
+    "addr:state": "IL",
+    "addr:street": "South Wabash Avenue",
+    "addr:street:name": "Wabash",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "building": "fire_station",
+    "building:levels": "2",
+    "chicago:building_id": "474554",
+    "museum": "history",
+    "name": "African American Firefighters Museum",
+    "old_name": "CFD Fire Department Engine Company 61",
+    "source": "https://wgntv.com/news/black-history-month/black-fire-brigade-helps-train-future-first-responders-helps-at-risk-black-youth/",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 210535149,
+  "center": {
+    "lat": 41.8246059,
+    "lon": -87.6227105
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "3831",
+    "addr:postcode": "60653",
+    "addr:state": "IL",
+    "addr:street": "South Michigan Avenue",
+    "addr:street:name": "Michigan",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "amenity": "arts_centre",
+    "architect": "Lawrence Gustav Hallberg; Hin Bredendieck; Nathan Lerner",
+    "building": "house",
+    "building:architecture": "classical_revival",
+    "chicago:building_id": "424037",
+    "heritage": "2",
+    "heritage:operator": "nrhp",
+    "heritage:website": "https://npgallery.nps.gov/NRHP/AssetDetail/362ac4df-5c1e-476f-a1dd-6a90eb468a7e",
+    "historic": "heritage",
+    "name": "South Side Community Art Center (SSCAC)",
+    "nrhp:criteria": "(A)",
+    "nrhp:inscription_date": "2018-09-13",
+    "phone": "+1-773-373-1026",
+    "ref:nrhp": "100002914",
+    "website": "https://www.sscartcenter.org/",
+    "wikidata": "Q7568471",
+    "wikimedia_commons": "File:South Side Community Art Center 1.JPG",
+    "wikipedia": "en:South Side Community Art Center"
+  }
+},
+{
+  "type": "way",
+  "id": 210537354,
+  "center": {
+    "lat": 41.8512035,
+    "lon": -87.6335249
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "238",
+    "addr:postcode": "60616",
+    "addr:state": "IL",
+    "addr:street": "West 23rd Street",
+    "addr:street:name": "23rd",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Street",
+    "building": "commercial",
+    "building:levels": "4",
+    "chicago:building_id": "387539",
+    "museum": "history",
+    "name": "Chinese American Museum of Chicago",
+    "tourism": "museum",
+    "website": "https://www.ccamuseum.org/",
+    "wikidata": "Q14687444",
+    "wikipedia": "en:Chinese American Museum of Chicago"
+  }
+},
+{
+  "type": "way",
+  "id": 210537820,
+  "center": {
+    "lat": 41.8536137,
+    "lon": -87.6242192
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2120",
+    "addr:postcode": "60616",
+    "addr:state": "IL",
+    "addr:street": "South Michigan Avenue",
+    "addr:street:name": "Michigan",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "building": "commercial",
+    "building:levels": "2",
+    "chicago:building_id": "821211",
+    "museum": "music",
+    "name": "Chess Studio",
+    "tourism": "museum",
+    "wikidata": "Q772494",
+    "wikipedia": "en:Chess Records"
+  }
+},
+{
+  "type": "way",
+  "id": 210679152,
+  "center": {
+    "lat": 41.8958631,
+    "lon": -87.6351366
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "222",
+    "addr:postcode": "60654",
+    "addr:state": "IL",
+    "addr:street": "West Superior Street",
+    "addr:street:name": "Superior",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Street",
+    "building": "yes",
+    "building:levels": "6",
+    "chicago:building_id": "813669",
+    "name": "Gruen Gallery",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "way",
+  "id": 210680271,
+  "center": {
+    "lat": 41.8959859,
+    "lon": -87.6344572
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "740",
+    "addr:postcode": "60654",
+    "addr:state": "IL",
+    "addr:street": "North Wells Street",
+    "addr:street:name": "Wells",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Street",
+    "building": "yes",
+    "chicago:building_id": "880558",
+    "email": "info@carlhammergallery.com",
+    "name": "Carl Hammer Gallery",
+    "opening_hours": "Tu-Fr 12:00-17:00; Sa 12:00-16:00",
+    "phone": "+1-312-266-8512",
+    "tourism": "gallery",
+    "website": "https://www.carlhammergallery.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 210680343,
+  "center": {
+    "lat": 41.8976165,
+    "lon": -87.6369119
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "833",
+    "addr:postcode": "60610",
+    "addr:state": "IL",
+    "addr:street": "North Orleans Street",
+    "addr:street:name": "Orleans",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Street",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "chicago:building_id": "335125",
+    "name": "Marwen",
+    "website": "https://marwen.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 210680486,
+  "center": {
+    "lat": 41.8958663,
+    "lon": -87.6349157
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "210-212",
+    "addr:postcode": "60654",
+    "addr:state": "IL",
+    "addr:street": "West Superior Street",
+    "addr:street:name": "Superior",
+    "addr:street:prefix": "West",
+    "addr:street:type": "Street",
+    "building": "yes",
+    "building:levels": "7",
+    "chicago:building_id": "813668",
+    "name": "Perimeter Gallery",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "way",
+  "id": 210684426,
+  "center": {
+    "lat": 41.9076645,
+    "lon": -87.6275340
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1365",
+    "addr:postcode": "60610",
+    "addr:state": "IL",
+    "addr:street": "North Astor Street",
+    "addr:street:name": "Astor",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Street",
+    "alt_name": "James Charnley House",
+    "building": "house",
+    "building:levels": "3",
+    "chicago:building_id": "311995",
+    "museum": "house",
+    "name": "Charnley-Pesky House Museum",
+    "tourism": "museum",
+    "wikidata": "Q6131262",
+    "wikipedia": "en:James Charnley House"
+  }
+},
+{
+  "type": "way",
+  "id": 210686215,
+  "center": {
+    "lat": 41.9102188,
+    "lon": -87.6267398
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1524",
+    "addr:postcode": "60610",
+    "addr:state": "IL",
+    "addr:street": "North Lake Shore Drive",
+    "addr:street:name": "Lake Shore",
+    "addr:street:prefix": "North",
+    "addr:street:type": "Drive",
+    "building": "commercial",
+    "building:levels": "4",
+    "check_date:opening_hours": "2023-03-10",
+    "chicago:building_id": "305269",
+    "ele": "179",
+    "fee": "yes",
+    "fee:conditional": "no @ (age < 4); members",
+    "gnis:feature_id": "1830807",
+    "museum": "medicine",
+    "name": "International Museum of Surgical Science",
+    "opening_hours": "Mo-Fr 09:30-17:00; Sa,Su 10:00-17:00",
+    "operator": "International College of Surgeons",
+    "source": "USGS Geonames",
+    "tourism": "museum",
+    "website": "https://imss.org/",
+    "wheelchair": "yes",
+    "wikidata": "Q6052105",
+    "wikipedia": "en:International Museum of Surgical Science"
+  }
+},
+{
+  "type": "way",
+  "id": 210693248,
+  "center": {
+    "lat": 41.6913457,
+    "lon": -87.6096951
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "11141",
+    "addr:postcode": "60628",
+    "addr:state": "IL",
+    "addr:street": "South Cottage Grove Avenue",
+    "addr:street:name": "Cottage Grove",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "boundary": "national_park",
+    "building": "commercial",
+    "chicago:building_id": "769929",
+    "museum": "history",
+    "name": "Historic Pullman Foundation Exhibit Hall",
+    "polling_station": "yes",
+    "tourism": "museum",
+    "website": "https://friendsofpullman.com/venue/cottage-grove-ave-chicago/"
+  }
+},
+{
+  "type": "way",
+  "id": 210698577,
+  "center": {
+    "lat": 41.7053741,
+    "lon": -87.6030693
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "10406",
+    "addr:postcode": "60628",
+    "addr:state": "IL",
+    "addr:street": "South Maryland Avenue",
+    "addr:street:name": "Maryland",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "building": "house",
+    "building:levels": "3",
+    "chicago:building_id": "824263",
+    "museum": "history",
+    "name": "A. Philip Randolph Pullman Porter Museum",
+    "name:etymology:wikidata": "Q720153",
+    "name:etymology:wikipedia": "A. Philip Randolph",
+    "subject:wikidata": "Q720153",
+    "subject:wikipedia": "en:A. Philip Randolph",
+    "tourism": "museum",
+    "website": "http://www.aphiliprandolphmuseum.org/",
+    "wikidata": "Q102283031"
+  }
+},
+{
+  "type": "way",
+  "id": 210911214,
+  "center": {
+    "lat": 41.7941325,
+    "lon": -87.6189544
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "301",
+    "addr:postcode": "60637",
+    "addr:street": "East Garfield Boulevard",
+    "addr:street:name": "Garfield",
+    "addr:street:prefix": "East",
+    "addr:street:type": "Boulevard",
+    "amenity": "arts_centre",
+    "building": "yes",
+    "chicago:building_id": "482845",
+    "name": "Washington Park Arts Incubator",
+    "source": "https://arts.uchicago.edu/artsandpubliclife/ai"
+  }
+},
+{
+  "type": "way",
+  "id": 211174717,
+  "center": {
+    "lat": 41.7716900,
+    "lon": -87.5866560
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "6760",
+    "addr:postcode": "60649",
+    "addr:state": "IL",
+    "addr:street": "South Stony Island Avenue",
+    "addr:street:name": "Stony Island",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "architect": "William Gibbons Uffendell",
+    "building": "commercial",
+    "building:architecture": "late_19th_and_20th_century_revivals;classical_revival",
+    "check_date:opening_hours": "2023-03-10",
+    "chicago:building_id": "837838",
+    "heritage": "2",
+    "heritage:operator": "nrhp",
+    "heritage:website": "https://npgallery.nps.gov/NRHP/AssetDetail/dd187d25-1ded-449b-af88-dc5aa5af66f6",
+    "historic": "heritage",
+    "museum": "art",
+    "name": "Stony Island Arts Bank",
+    "nrhp:criteria": "(A),(C)",
+    "nrhp:inscription_date": "2013-12-31",
+    "opening_hours": "Su 14:00-19:00",
+    "ref:nrhp": "13001002",
+    "start_date": "1923",
+    "tourism": "museum",
+    "website": "https://www.rebuild-foundation.org/",
+    "wikidata": "Q85803591",
+    "wikimedia_commons": "File:13- Stony Island Trust and Savings Bank Building.jpg",
+    "wikipedia": "en:Stony Island Trust and Savings Bank Building"
+  }
+},
+{
+  "type": "way",
+  "id": 211176110,
+  "center": {
+    "lat": 41.7638728,
+    "lon": -87.5936588
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "7200",
+    "addr:postcode": "60619",
+    "addr:state": "IL",
+    "addr:street": "South Kimbark Avenue",
+    "addr:street:name": "Kimbark",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "building": "yes",
+    "chicago:building_id": "866066",
+    "name": "Theaster Gates Studio",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "way",
+  "id": 225182068,
+  "center": {
+    "lat": 41.8029308,
+    "lon": -87.9350910
+  },
+  "tags": {
+    "building": "yes",
+    "museum": "local",
+    "name": "Hinsdale Historical Society",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 228242938,
+  "center": {
+    "lat": 41.8097533,
+    "lon": -87.9009195
+  },
+  "tags": {
+    "addr:city": "Western Springs",
+    "addr:housenumber": "914",
+    "addr:postcode": "60558",
+    "addr:state": "IL",
+    "addr:street": "Hillgrove Avenue",
+    "building": "water_tower",
+    "man_made": "water_tower",
+    "museum": "history",
+    "name": "Western Springs Water Tower",
+    "tourism": "museum",
+    "website": "https://westernspringshistory.org/",
+    "wikidata": "Q7988324",
+    "wikipedia": "en:Western Springs Water Tower"
+  }
+},
+{
+  "type": "way",
+  "id": 230260101,
+  "center": {
+    "lat": 42.0165458,
+    "lon": -87.8595068
+  },
+  "tags": {
+    "building": "yes",
+    "museum": "nature",
+    "name": "Wildwood Nature Center",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 232267088,
+  "center": {
+    "lat": 41.8274109,
+    "lon": -87.8180504
+  },
+  "tags": {
+    "addr:city": "Riverside",
+    "addr:housenumber": "32",
+    "addr:postcode": "60546",
+    "addr:state": "IL",
+    "addr:street": "East Quincy Street",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "name": "Riverside Arts Center",
+    "website": "https://www.riversideartscenter.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 262696048,
+  "center": {
+    "lat": 41.7090443,
+    "lon": -87.8773348
+  },
+  "tags": {
+    "addr:city": "Willow Springs",
+    "addr:housenumber": "9800",
+    "addr:postcode": "60480",
+    "addr:state": "IL",
+    "addr:street": "Willow Springs Road",
+    "building": "public",
+    "museum": "nature",
+    "name": "Little Red Schoolhouse Nature Center",
+    "operator": "Forest Preserve District of Cook County",
+    "operator:type": "public",
+    "tourism": "museum",
+    "website": "https://fpdcc.com/places/locations/little-red-schoolhouse-nature-center/"
+  }
+},
+{
+  "type": "way",
+  "id": 284682428,
+  "center": {
+    "lat": 41.8932470,
+    "lon": -87.8262151
+  },
+  "tags": {
+    "addr:city": "River Forest",
+    "addr:housenumber": "738",
+    "addr:postcode": "60305",
+    "addr:state": "IL",
+    "addr:street": "Thatcher Avenue",
+    "building": "public",
+    "ele": "190",
+    "fee": "no",
+    "gnis:feature_id": "1836953",
+    "museum": "nature",
+    "name": "Hal Tyrrell Trailside Museum of Natural History",
+    "opening_hours": "Sa-We 09:00-17:00; Fr off",
+    "operator": "Forest Preserve District of Cook County",
+    "operator:type": "public",
+    "source": "USGS Geonames",
+    "tourism": "museum",
+    "website": "https://fpdcc.com/places/locations/trailside-museum-natural-history/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 288536064,
+  "center": {
+    "lat": 41.9010531,
+    "lon": -87.8804172
+  },
+  "tags": {
+    "addr:city": "Stone Park",
+    "addr:housenumber": "1621",
+    "addr:postcode": "60165",
+    "addr:state": "IL",
+    "addr:street": "North 39th Avenue",
+    "building": "monastery",
+    "museum": "history",
+    "name": "Casa Italia",
+    "tourism": "museum",
+    "website": "https://www.casaitaliachicago.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 300590195,
+  "center": {
+    "lat": 41.7257228,
+    "lon": -87.5844938
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "9301",
+    "addr:postcode": "60617",
+    "addr:state": "IL",
+    "addr:street": "South Stony Island Avenue",
+    "building": "commercial",
+    "check_date:opening_hours": "2023-03-10",
+    "fee": "yes",
+    "museum": "children",
+    "name": "Bronzeville Children's Museum",
+    "opening_hours": "We-Sa 10:00-14:00",
+    "tourism": "museum",
+    "website": "https://www.bronzevillechildrensmuseum.com/",
+    "wikidata": "Q4974268",
+    "wikipedia": "en:Bronzeville Children's Museum"
+  }
+},
+{
+  "type": "way",
+  "id": 354397538,
+  "center": {
+    "lat": 41.6892713,
+    "lon": -87.9257493
+  },
+  "tags": {
+    "addr:city": "Lemont",
+    "addr:housenumber": "12545",
+    "addr:postcode": "60439",
+    "addr:state": "IL",
+    "addr:street": "Calumet Sag Road",
+    "building": "public",
+    "building:levels": "2",
+    "museum": "nature",
+    "name": "Sagawau Environmental Learning Center",
+    "operator": "Forest Preserve District of Cook County",
+    "operator:type": "public",
+    "owner": "Forest Preserve District of Cook County",
+    "tourism": "museum",
+    "website": "https://fpdcc.com/places/locations/sagawau-environmental-learning-center/"
+  }
+},
+{
+  "type": "way",
+  "id": 361635923,
+  "center": {
+    "lat": 41.9251388,
+    "lon": -87.6525017
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "935",
+    "addr:postcode": "60614",
+    "addr:state": "IL",
+    "addr:street": "West Fullerton Avenue",
+    "building": "university",
+    "museum": "art",
+    "name": "DePaul Art Museum",
+    "operator": "DePaul University",
+    "operator:type": "university",
+    "tourism": "museum",
+    "website": "http://museums.depaul.edu/"
+  }
+},
+{
+  "type": "way",
+  "id": 414261177,
+  "center": {
+    "lat": 41.8877958,
+    "lon": -87.7795049
+  },
+  "tags": {
+    "addr:city": "Oak Park",
+    "addr:housenumber": "129",
+    "addr:postcode": "60302",
+    "addr:state": "IL",
+    "addr:street": "Lake Street",
+    "building": "yes",
+    "museum": "history",
+    "name": "Oak Park River Forest Museum",
+    "tourism": "museum",
+    "website": "https://oprfmuseum.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 416824688,
+  "center": {
+    "lat": 41.9088713,
+    "lon": -87.7870661
+  },
+  "tags": {
+    "addr:city": "Oak Park",
+    "addr:housenumber": "6445",
+    "addr:postcode": "60302",
+    "addr:state": "IL",
+    "addr:street": "West North Avenue",
+    "building": "commercial",
+    "museum": "children",
+    "name": "Wonder Works Children's Museum",
+    "tourism": "museum",
+    "website": "https://wonder-works.org/",
+    "wikidata": "Q8031784",
+    "wikipedia": "en:Wonder Works"
+  }
+},
+{
+  "type": "way",
+  "id": 420153334,
+  "center": {
+    "lat": 41.8723575,
+    "lon": -87.8152118
+  },
+  "tags": {
+    "addr:city": "Forest Park",
+    "addr:housenumber": "7501",
+    "addr:postcode": "60130",
+    "addr:state": "IL",
+    "addr:street": "Harrison Street",
+    "building": "yes",
+    "museum": "sports",
+    "name": "16 Inch Softball Hall of Fame Museum",
+    "opening_hours": "Sa 12:00-16:00",
+    "phone": "+1-708-366-7500",
+    "tourism": "museum",
+    "website": "https://www.16inchsoftballhof.com"
+  }
+},
+{
+  "type": "way",
+  "id": 477503334,
+  "center": {
+    "lat": 41.8927733,
+    "lon": -87.7950512
+  },
+  "tags": {
+    "addr:city": "Oak Park",
+    "addr:housenumber": "339",
+    "addr:postcode": "60302",
+    "addr:state": "IL",
+    "addr:street": "North Oak Park Avenue",
+    "building": "house",
+    "building:levels": "2",
+    "historic": "building",
+    "museum": "person",
+    "name": "Ernest Hemingway Birthplace Museum",
+    "opening_hours": "We-Fr 13:00-17:00; Sa 10:00-17:00; Su 13:00-17:00",
+    "operator": "Earnest Hemingway Foundation",
+    "roof:levels": "1",
+    "tourism": "museum",
+    "website": "https://www.hemingwaybirthplace.com/",
+    "wikidata": "Q85747384",
+    "wikipedia": "en:Birthplace of Ernest Hemingway"
+  }
+},
+{
+  "type": "way",
+  "id": 479212446,
+  "center": {
+    "lat": 41.8895014,
+    "lon": -87.8389321
+  },
+  "tags": {
+    "addr:city": "Maywood",
+    "addr:housenumber": "25",
+    "addr:postcode": "60153",
+    "addr:state": "IL",
+    "addr:street": "North 5th Avenue",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "building:levels": "3",
+    "name": "Maywood Fine Arts"
+  }
+},
+{
+  "type": "way",
+  "id": 479213627,
+  "center": {
+    "lat": 41.8892979,
+    "lon": -87.8396378
+  },
+  "tags": {
+    "addr:city": "Maywood",
+    "addr:housenumber": "14-18",
+    "addr:postcode": "60153",
+    "addr:state": "IL",
+    "addr:street": "North 5th Avenue",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "building:levels": "1",
+    "description": "Opened 2016, footprint approximate. 9000 square feet",
+    "name": "Maywood Fine Arts"
+  }
+},
+{
+  "type": "way",
+  "id": 561571930,
+  "center": {
+    "lat": 41.9244786,
+    "lon": -87.6493564
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "2330",
+    "addr:postcode": "60614",
+    "addr:state": "IL",
+    "addr:street": "North Halsted Street",
+    "amenity": "arts_centre",
+    "building": "university",
+    "name": "Holtschneider Performance Center"
+  }
+},
+{
+  "type": "way",
+  "id": 562345787,
+  "center": {
+    "lat": 41.7549288,
+    "lon": -87.8957869
+  },
+  "tags": {
+    "addr:city": "Burr Ridge",
+    "addr:housenumber": "7425",
+    "addr:postcode": "60527",
+    "addr:state": "IL",
+    "addr:street": "Wolf Road",
+    "building": "yes",
+    "name": "Flagg Creek Historical Museum",
+    "opening_hours": "Mo 10:00-13:00",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 577753890,
+  "center": {
+    "lat": 41.7197074,
+    "lon": -87.7476503
+  },
+  "tags": {
+    "addr:city": "Oak Lawn",
+    "addr:housenumber": "5100",
+    "addr:postcode": "60453",
+    "addr:state": "IL",
+    "addr:street": "Museum Drive",
+    "building": "commercial",
+    "museum": "children",
+    "name": "The Children's Museum in Oak Lawn",
+    "tourism": "museum",
+    "website": "https://www.cmoaklawn.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 609551349,
+  "center": {
+    "lat": 41.8988727,
+    "lon": -87.9388433
+  },
+  "tags": {
+    "building": "yes",
+    "museum": "local",
+    "name": "Elmhurst Historical Museum",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 614962253,
+  "center": {
+    "lat": 41.8229286,
+    "lon": -87.8425047
+  },
+  "tags": {
+    "building": "yes",
+    "name": "Brookfield Historical Society",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 622476794,
+  "center": {
+    "lat": 41.8205839,
+    "lon": -87.9274892
+  },
+  "tags": {
+    "addr:city": "Oak Brook",
+    "addr:housenumber": "3800",
+    "addr:postcode": "60523",
+    "addr:state": "IL",
+    "addr:street": "York Road",
+    "alt_name": "name=Graue Mill & Museum",
+    "building": "historic",
+    "contact:facebook": "https://www.facebook.com/GraueMill/",
+    "heritage": "2",
+    "heritage:operator": "nrhp",
+    "museum": "history",
+    "name": "Graue Mill",
+    "opening_hours": "Apr 15 - Nov 15",
+    "operator": "Forest Preserve District of DuPage County",
+    "operator:type": "public",
+    "other_name": "Frederick Graue's Gristmill",
+    "phone": "+1-630-850-8112",
+    "ref:nrhp": "75002077",
+    "tourism": "museum",
+    "website": "https://www.grauemill.org/",
+    "wikidata": "Q5597744",
+    "wikipedia": "en:Graue Mill"
+  }
+},
+{
+  "type": "way",
+  "id": 622476795,
+  "center": {
+    "lat": 41.8199937,
+    "lon": -87.9276380
+  },
+  "tags": {
+    "building": "house",
+    "description": "The restored Frederick Graue House was the 1850s Victorian home of the Graue family.",
+    "name": "Graue House",
+    "start_date": "1850",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 622476796,
+  "center": {
+    "lat": 41.8266610,
+    "lon": -87.9321910
+  },
+  "tags": {
+    "addr:city": "Oak Brook",
+    "addr:housenumber": "3609",
+    "addr:postcode": "60523",
+    "addr:state": "IL",
+    "addr:street": "Spring Road",
+    "building": "yes",
+    "museum": "nature",
+    "name": "Fullersburg Woods Nature Education Center",
+    "opening_hours": "Mo-Sa 10:00-17:00; Su off",
+    "phone": "+1-630-850-8110",
+    "tourism": "museum",
+    "website": "https://www.dupageforest.org/places-to-go/centers/fullerburg-woods-nature-education-center"
+  }
+},
+{
+  "type": "way",
+  "id": 737904046,
+  "center": {
+    "lat": 41.8114687,
+    "lon": -87.8982342
+  },
+  "tags": {
+    "addr:city": "Western Springs",
+    "addr:housenumber": "785",
+    "addr:postcode": "60558",
+    "addr:state": "IL",
+    "addr:street": "43rd Street",
+    "building": "yes",
+    "museum": "history",
+    "name": "Ekdahl House Museum",
+    "opening_hours": "24/7",
+    "operator": "Western Springs Historical Society",
+    "operator:type": "private_non_profit",
+    "tourism": "museum",
+    "website": "https://westernspringshistory.org/visit/ekdahl-house-museum/"
+  }
+},
+{
+  "type": "way",
+  "id": 765296573,
+  "center": {
+    "lat": 41.8789192,
+    "lon": -87.6221416
+  },
+  "tags": {
+    "area": "yes",
+    "indoor": "room",
+    "level": "1-2",
+    "name": "Arts of the Americas",
+    "operator": "Art Institute of Chicago",
+    "ref": "163-179, 261-265, 271-273",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "way",
+  "id": 771991926,
+  "center": {
+    "lat": 41.8894717,
+    "lon": -87.8010301
+  },
+  "tags": {
+    "addr:city": "Oak Park",
+    "addr:housenumber": "167",
+    "addr:postcode": "60301",
+    "addr:state": "IL",
+    "addr:street": "Forest Avenue",
+    "architect": "Tom Bassett-Dilley Architects",
+    "building": "public",
+    "building:levels": "1",
+    "museum": "nature",
+    "name": "Austin Gardens Environmental Education Center",
+    "roof:levels": "0",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 823635262,
+  "center": {
+    "lat": 42.0196681,
+    "lon": -87.6815788
+  },
+  "tags": {
+    "addr:city": "Evanston",
+    "addr:housenumber": "721",
+    "addr:postcode": "60202",
+    "addr:state": "IL",
+    "addr:street": "Howard Street",
+    "amenity": "arts_centre",
+    "building": "commercial",
+    "name": "Theo Ubique Cabaret Theatre",
+    "website": "https://www.theo-u.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 837469037,
+  "center": {
+    "lat": 41.8054389,
+    "lon": -87.8696915
+  },
+  "tags": {
+    "addr:city": "La Grange",
+    "addr:housenumber": "444",
+    "addr:postcode": "60525",
+    "addr:state": "IL",
+    "addr:street": "South La Grange Road",
+    "building": "house",
+    "museum": "local",
+    "name": "La Grange Area Historical Society",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 938718508,
+  "center": {
+    "lat": 41.6855199,
+    "lon": -87.5732467
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "11555",
+    "addr:postcode": "60617",
+    "addr:state": "IL",
+    "addr:street": "South Stony Island Avenue",
+    "building": "public",
+    "museum": "nature",
+    "name": "Ford Calumet Environmental Center (FCEC)",
+    "operator": "Chicago Park District",
+    "operator:type": "public",
+    "tourism": "museum",
+    "website": "https://www.chicagoparkdistrict.com/parks-facilities/ford-calumet-environmental-center-fcec"
+  }
+},
+{
+  "type": "way",
+  "id": 1194680924,
+  "center": {
+    "lat": 42.0211585,
+    "lon": -87.8291518
+  },
+  "tags": {
+    "addr:city": "Park Ridge",
+    "addr:housenumber": "721",
+    "addr:postcode": "60068",
+    "addr:state": "IL",
+    "addr:street": "North Prospect Avenue",
+    "building": "house",
+    "museum": "local",
+    "name": "Park Ridge Historical Society",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 1285774845,
+  "center": {
+    "lat": 41.8698683,
+    "lon": -87.6597331
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "919",
+    "addr:postcode": "60607",
+    "addr:state": "IL",
+    "addr:street": "South Ada Street",
+    "museum": "history",
+    "name": "National Public Housing Museum",
+    "tourism": "museum",
+    "website": "https://www.nphm.org/",
+    "wikidata": "Q41573647",
+    "wikipedia": "en:National Public Housing Museum"
+  }
+},
+{
+  "type": "way",
+  "id": 1425661249,
+  "center": {
+    "lat": 41.8795829,
+    "lon": -87.6226844
+  },
+  "tags": {
+    "indoor": "room",
+    "layer": "1",
+    "level": "1",
+    "name": "Alsdorf Gallaries",
+    "operator": "Art Institute of Chicago",
+    "ref": "140-143",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "way",
+  "id": 1425669059,
+  "center": {
+    "lat": 41.8801143,
+    "lon": -87.6223172
+  },
+  "tags": {
+    "area": "yes",
+    "indoor": "room",
+    "level": "1",
+    "name": "Special Exibitions",
+    "operator": "Art Institute of Chicago",
+    "ref": "182-184",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "way",
+  "id": 1425669060,
+  "center": {
+    "lat": 41.8804799,
+    "lon": -87.6217021
+  },
+  "tags": {
+    "indoor": "room",
+    "level": "2",
+    "name": "Contemporary",
+    "operator": "Art Institute of Chicago",
+    "ref": "288-299",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "way",
+  "id": 1425669061,
+  "center": {
+    "lat": 41.8799590,
+    "lon": -87.6220275
+  },
+  "tags": {
+    "area": "yes",
+    "indoor": "room",
+    "level": "1",
+    "name": "Film and Media",
+    "operator": "Art Institute of Chicago",
+    "ref": "186-188",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "way",
+  "id": 1425669062,
+  "center": {
+    "lat": 41.8791104,
+    "lon": -87.6221463
+  },
+  "tags": {
+    "area": "yes",
+    "indoor": "room",
+    "level": "2",
+    "name": "Sculpture Court",
+    "operator": "Art Institute of Chicago",
+    "ref": "161",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "way",
+  "id": 1434240394,
+  "center": {
+    "lat": 41.7862614,
+    "lon": -87.5858794
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "6039",
+    "addr:postcode": "60637",
+    "addr:state": "IL",
+    "addr:street": "South Stony Island Avenue",
+    "building": "yes",
+    "museum": "person",
+    "name": "Obama Presidential Center Museum",
+    "operator": "Obama Presidential Center",
+    "operator:type": "private_non_profit",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 1483956924,
+  "center": {
+    "lat": 41.8693291,
+    "lon": -87.6322904
+  },
+  "tags": {
+    "building": "yes",
+    "level": "5",
+    "name": "Play Street Meuseum",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "relation",
+  "id": 1870546,
+  "center": {
+    "lat": 41.8795594,
+    "lon": -87.6225683
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "111",
+    "addr:postcode": "60603",
+    "addr:state": "IL",
+    "addr:street": "South Michigan Avenue",
+    "addr:street:name": "Michigan",
+    "addr:street:prefix": "South",
+    "addr:street:type": "Avenue",
+    "building": "commercial",
+    "chicago:building_id": "881847",
+    "layer": "1",
+    "museum": "art",
+    "name": "The Art Institute of Chicago",
+    "opening_hours": "Mo 11:00-17:00; Tu-We off; Th 11:00-20:00; Fr-Su 11:00-17:00",
+    "tourism": "museum",
+    "type": "multipolygon",
+    "website": "https://www.artic.edu/",
+    "wikidata": "Q239303",
+    "wikipedia": "en:Art Institute of Chicago"
+  }
+},
+{
+  "type": "relation",
+  "id": 2031807,
+  "center": {
+    "lat": 41.8577219,
+    "lon": -87.6212227
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1600",
+    "addr:postcode": "60616",
+    "addr:state": "IL",
+    "addr:street": "South Indiana Avenue",
+    "architect": "Henry Hobson Richardson",
+    "building": "house",
+    "name": "Glessner House Museum",
+    "tourism": "museum",
+    "type": "multipolygon",
+    "website": "https://www.glessnerhouse.org/",
+    "wikidata": "Q3181814",
+    "wikipedia": "en:John J. Glessner House"
+  }
+},
+{
+  "type": "relation",
+  "id": 2054806,
+  "center": {
+    "lat": 41.7892146,
+    "lon": -87.5974892
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "1155",
+    "addr:postcode": "60637",
+    "addr:state": "IL",
+    "addr:street": "East 58th Street",
+    "addr:street:name": "58th",
+    "addr:street:prefix": "East",
+    "addr:street:type": "Street",
+    "building": "university",
+    "chicago:building_id": "498307",
+    "email": "oi-museum@uchicago.edu",
+    "museum": "archaeological",
+    "name": "Institute for the Study of Ancient Cultures Museum",
+    "old_name": "Oriental Institute",
+    "operator": "The University of Chicago",
+    "operator:type": "university",
+    "phone": "+1 773-702-9514",
+    "tourism": "museum",
+    "type": "multipolygon",
+    "website": "https://isac.uchicago.edu/",
+    "wikidata": "Q1276053",
+    "wikipedia": "en:Institute for the Study of Ancient Cultures"
+  }
+},
+{
+  "type": "relation",
+  "id": 15899437,
+  "center": {
+    "lat": 41.8838798,
+    "lon": -87.6249853
+  },
+  "tags": {
+    "addr:city": "Chicago",
+    "addr:housenumber": "78",
+    "addr:postcode": "60602",
+    "addr:state": "IL",
+    "addr:street": "East Washington Street",
+    "addr:street:name": "Washington",
+    "addr:street:prefix": "East",
+    "addr:street:type": "Street",
+    "amenity": "arts_centre",
+    "building": "public",
+    "building:colour": "tan",
+    "building:levels": "5",
+    "building:material": "stone",
+    "chicago:building_id": "354427",
+    "gnis:feature_id": "1826589",
+    "layer": "1",
+    "name": "Chicago Cultural Center",
+    "note": "Here is indoor map if someone wants to map it: https://www.chicago.gov/content/dam/city/depts/dca/Chicago%20Cultural%20Center/cccmap.png",
+    "old_name": "Chicago Public Library",
+    "ref:nrhp": "72000449",
+    "type": "multipolygon",
+    "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_culturalcenter.html",
+    "wikidata": "Q2398614",
+    "wikipedia": "en:Chicago Cultural Center"
+  }
+},
+{
+  "type": "relation",
+  "id": 19536647,
+  "center": {
+    "lat": 41.8795961,
+    "lon": -87.6218547
+  },
+  "tags": {
+    "area": "yes",
+    "indoor": "room",
+    "level": "1",
+    "name": "Arts of the Greek, Roman, Byzantine Worlds",
+    "operator": "Art Institute of Chicago",
+    "ref": "150-154",
+    "tourism": "gallery",
+    "type": "multipolygon"
+  }
+}
+
+  ]
+}

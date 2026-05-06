@@ -1,0 +1,8 @@
+# Initial Idea
+We would like to examine whether access to museums and cultural institutions in Chicago is spatially equitable across neighborhoods. Building on our group’s discussion, we are interested in mapping the distribution of museums and comparing it with neighborhood-level demographic and socioeconomic characteristics such as income, race/ethnicity, population density, poverty, and car ownership.
+
+Our preliminary plan is to collect museum location data from OpenStreetMap and combine it with ACS census-tract data and Chicago community area boundaries. We will create buffers around museum locations and/or measure proximity to museums, then compare the demographic characteristics of populations inside and outside these access zones. If possible, we may also incorporate CTA stop or route data to examine whether museums are reachable by public transit, not just by physical distance.
+
+Our guiding question is: Are museums and cultural institutions in Chicago distributed in a way that provides equitable access across neighborhoods, or are there cultural-access gaps associated with income, race/ethnicity, and transportation access?
+
+Our preliminary hypothesis is that museums are more concentrated in downtown, North Side, and tourist-oriented areas, while some South and West Side neighborhoods may have fewer nearby museums or weaker transit-accessible cultural resources. We expect to produce maps showing museum locations overlaid with income and demographic variables, as well as an accessibility map showing which communities fall inside or outside reasonable museum access zones.

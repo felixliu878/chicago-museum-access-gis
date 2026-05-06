@@ -1,0 +1,16 @@
+.DS_Store
+**/.DS_Store
+
+# Temporary PDF render previews
+tmp_pdf_render/
+
+# LaTeX/Tectonic build outputs
+outputs/paper/build/
+*.aux
+*.log
+*.out
+*.toc
+
+# Python cache
+__pycache__/
+*.py[cod]
