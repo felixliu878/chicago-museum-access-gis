@@ -19,6 +19,7 @@ from qgis.core import (
     QgsLayoutItemLabel,
     QgsLayoutItemLegend,
     QgsLayoutItemMap,
+    QgsLayoutItemPicture,
     QgsLayoutItemScaleBar,
     QgsLayoutPoint,
     QgsLayoutSize,
@@ -41,6 +42,9 @@ FIGURES = ROOT / "outputs" / "figures"
 QGIS_OUT = ROOT / "outputs" / "qgis"
 PROJECT_PATH = QGIS_OUT / "museum_access_chicago.qgz"
 QGIS_PREFIX = "/Applications/QGIS-final-4_0_0.app/Contents/MacOS"
+NORTH_ARROW_SVG = (
+    "/Applications/QGIS-final-4_0_0.app/Contents/Resources/qgis/svg/arrows/NorthArrow_04.svg"
+)
 
 
 def init_qgis() -> QgsApplication:
@@ -188,6 +192,39 @@ def add_label(layout: QgsPrintLayout, text: str, x: float, y: float, size: int, 
     return label
 
 
+def add_map_furniture(layout: QgsPrintLayout, map_item: QgsLayoutItemMap) -> None:
+    """Add consistent north arrow and scale bar to each exported map layout."""
+    scale_bar = QgsLayoutItemScaleBar(layout)
+    scale_bar.setLinkedMap(map_item)
+    scale_bar.setStyle("Line Ticks Up")
+    scale_bar.applyDefaultSize()
+    scale_bar.setUnits(QgsUnitTypes.DistanceMiles)
+    scale_bar.setUnitLabel("mi")
+    scale_bar.setNumberOfSegments(2)
+    scale_bar.setNumberOfSegmentsLeft(0)
+    scale_bar.setUnitsPerSegment(2)
+    scale_bar.setHeight(2.0)
+    scale_bar.setLineWidth(0.35)
+    scale_bar.setBoxContentSpace(1.0)
+    scale_bar.setLabelBarSpace(1.4)
+    scale_bar.setFont(QFont("Arial", 7))
+    scale_bar.setFontColor(QColor("#222222"))
+    scale_bar.setLineColor(QColor("#222222"))
+    scale_bar.setBackgroundEnabled(True)
+    scale_bar.setBackgroundColor(QColor(255, 255, 255, 210))
+    scale_bar.attemptMove(QgsLayoutPoint(12, 192, QgsUnitTypes.LayoutMillimeters))
+    layout.addLayoutItem(scale_bar)
+
+    north_arrow = QgsLayoutItemPicture(layout)
+    north_arrow.setPicturePath(NORTH_ARROW_SVG)
+    north_arrow.setLinkedMap(map_item)
+    north_arrow.setBackgroundEnabled(True)
+    north_arrow.setBackgroundColor(QColor(255, 255, 255, 210))
+    north_arrow.attemptMove(QgsLayoutPoint(190, 190, QgsUnitTypes.LayoutMillimeters))
+    north_arrow.attemptResize(QgsLayoutSize(12, 14, QgsUnitTypes.LayoutMillimeters))
+    layout.addLayoutItem(north_arrow)
+
+
 def export_map(
     project: QgsProject,
     name: str,
@@ -227,6 +264,8 @@ def export_map(
     legend.attemptMove(QgsLayoutPoint(214, 30, QgsUnitTypes.LayoutMillimeters))
     legend.attemptResize(QgsLayoutSize(58, 112, QgsUnitTypes.LayoutMillimeters))
     layout.addLayoutItem(legend)
+
+    add_map_furniture(layout, map_item)
 
     source = (
         "Sources: ACS 2024 5-year, 2024 TIGER/Line, City of Chicago community areas, "
