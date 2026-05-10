@@ -1,0 +1,1079 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapping Cultural Access Gaps in Chicago</title>
+  <style>
+    :root {
+      --ink: #181818;
+      --muted: #5a5a55;
+      --line: #d8d3c7;
+      --paper: #fbfaf6;
+      --warm: #f0ece2;
+      --teal: #087b6f;
+      --teal-dark: #055d55;
+      --rust: #c75934;
+      --gold: #e7c65b;
+      --green: #7aae87;
+      --purple: #7256a5;
+      --blue: #4967aa;
+      --black-gap: #242424;
+      --shadow: 0 24px 80px rgba(25, 24, 20, 0.18);
+      --radius: 8px;
+      font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background: #d9d4c9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(8, 123, 111, 0.12), transparent 36%),
+        linear-gradient(315deg, rgba(199, 89, 52, 0.12), transparent 38%),
+        #d9d4c9;
+    }
+
+    .deck {
+      position: relative;
+      width: min(100vw, calc(100vh * 16 / 9));
+      height: min(100vh, calc(100vw * 9 / 16));
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      padding: 54px 68px 44px;
+      background:
+        linear-gradient(90deg, rgba(240, 236, 226, 0.9), rgba(251, 250, 246, 0.9) 42%, rgba(251, 250, 246, 1)),
+        var(--paper);
+    }
+
+    .slide.active {
+      display: grid;
+      gap: 26px;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    .slide.full-visual {
+      padding: 42px 56px 40px;
+    }
+
+    .slide.title {
+      padding: 64px 76px 46px;
+      background:
+        linear-gradient(90deg, rgba(24, 24, 24, 0.86), rgba(24, 24, 24, 0.52) 42%, rgba(24, 24, 24, 0.08)),
+        url("../figures/fig_01_institution_distribution_qgis.png") center / cover;
+      color: white;
+    }
+
+    header {
+      display: grid;
+      gap: 10px;
+      max-width: 1060px;
+    }
+
+    .eyebrow {
+      color: var(--teal-dark);
+      font-size: 17px;
+      font-weight: 760;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .title .eyebrow {
+      color: #dff6ee;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 980px;
+      font-size: 68px;
+      line-height: 0.96;
+      font-weight: 820;
+    }
+
+    h2 {
+      max-width: 1080px;
+      font-size: 43px;
+      line-height: 1.06;
+      font-weight: 800;
+    }
+
+    h3 {
+      font-size: 25px;
+      line-height: 1.15;
+      font-weight: 790;
+    }
+
+    .lead {
+      max-width: 900px;
+      color: var(--muted);
+      font-size: 24px;
+      line-height: 1.35;
+      font-weight: 500;
+    }
+
+    .title .lead {
+      max-width: 760px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .title-meta {
+      align-self: end;
+      display: grid;
+      gap: 10px;
+      max-width: 760px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 21px;
+      line-height: 1.35;
+    }
+
+    .content {
+      min-height: 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+      gap: 34px;
+      align-items: center;
+      min-height: 0;
+    }
+
+    .split.reverse {
+      grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    }
+
+    .stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .claim {
+      color: var(--ink);
+      font-size: 31px;
+      line-height: 1.15;
+      font-weight: 790;
+    }
+
+    .text {
+      color: var(--muted);
+      font-size: 22px;
+      line-height: 1.34;
+    }
+
+    .bullets {
+      display: grid;
+      gap: 16px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .bullets li {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 13px;
+      color: var(--ink);
+      font-size: 22px;
+      line-height: 1.32;
+      align-items: start;
+    }
+
+    .bullets li::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      margin-top: 10px;
+      background: var(--rust);
+      border-radius: 999px;
+    }
+
+    .source {
+      color: #6a665f;
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #6c6860;
+      font-size: 13px;
+      line-height: 1.2;
+      border-top: 1px solid rgba(216, 211, 199, 0.72);
+      padding-top: 12px;
+    }
+
+    .progress {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 5px;
+      width: 100%;
+      background: rgba(24, 24, 24, 0.08);
+      z-index: 30;
+    }
+
+    .progress span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--teal), var(--rust), var(--gold));
+      transition: width 160ms ease;
+    }
+
+    .counter {
+      font-variant-numeric: tabular-nums;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.56);
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 720;
+      white-space: nowrap;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .metric {
+      min-height: 142px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.64);
+      display: grid;
+      align-content: space-between;
+      gap: 16px;
+    }
+
+    .metric strong {
+      font-size: 44px;
+      line-height: 0.95;
+      color: var(--teal-dark);
+      font-weight: 820;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 620;
+    }
+
+    .method-flow {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 15px;
+      align-items: stretch;
+    }
+
+    .method-step {
+      border-top: 6px solid var(--teal);
+      padding: 18px 16px 20px;
+      background: rgba(255, 255, 255, 0.66);
+      border-radius: var(--radius);
+      border-left: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      min-height: 178px;
+      display: grid;
+      gap: 12px;
+      align-content: start;
+    }
+
+    .method-step:nth-child(2) {
+      border-top-color: var(--rust);
+    }
+
+    .method-step:nth-child(3) {
+      border-top-color: var(--gold);
+    }
+
+    .method-step:nth-child(4) {
+      border-top-color: var(--blue);
+    }
+
+    .step-num {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: var(--ink);
+      color: white;
+      font-weight: 800;
+      font-size: 16px;
+    }
+
+    .method-step p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.28;
+    }
+
+    .figure-wrap {
+      min-width: 0;
+      height: 100%;
+      display: grid;
+      place-items: center;
+    }
+
+    .figure {
+      width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border: 1px solid var(--line);
+      background: white;
+      border-radius: var(--radius);
+    }
+
+    .full-map {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 24px;
+      align-items: center;
+      min-height: 0;
+    }
+
+    .full-map .figure {
+      height: 100%;
+      max-height: 548px;
+    }
+
+    .callout {
+      border-left: 7px solid var(--rust);
+      padding: 20px 0 20px 22px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .callout strong {
+      font-size: 56px;
+      line-height: 0.95;
+      color: var(--rust);
+      font-weight: 830;
+    }
+
+    .callout span {
+      color: var(--ink);
+      font-size: 24px;
+      line-height: 1.18;
+      font-weight: 750;
+    }
+
+    .legend-bars {
+      display: grid;
+      gap: 15px;
+      margin-top: 8px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 148px 1fr 72px;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .bar-row .label {
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 760;
+    }
+
+    .bar-track {
+      height: 22px;
+      background: rgba(24, 24, 24, 0.08);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .bar.teal {
+      background: var(--teal);
+    }
+
+    .bar.rust {
+      background: var(--rust);
+    }
+
+    .bar.black {
+      background: var(--black-gap);
+    }
+
+    .bar.gold {
+      background: var(--gold);
+    }
+
+    .bar-value {
+      color: var(--muted);
+      font-size: 18px;
+      font-weight: 760;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .two-charts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: stretch;
+      min-height: 0;
+    }
+
+    .chart-panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.64);
+      padding: 22px;
+      display: grid;
+      gap: 16px;
+      align-content: start;
+      min-height: 0;
+    }
+
+    .chart-panel h3 {
+      font-size: 23px;
+    }
+
+    .chart-panel .figure {
+      max-height: 336px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .quote {
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 790;
+      color: var(--ink);
+      max-width: 980px;
+    }
+
+    .closing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .closing-block {
+      border-top: 6px solid var(--teal);
+      padding: 22px;
+      background: rgba(255, 255, 255, 0.68);
+      border-radius: var(--radius);
+      border-left: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+
+    .closing-block:nth-child(2) {
+      border-top-color: var(--rust);
+    }
+
+    .closing-block p {
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.32;
+    }
+
+    .notes-panel {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      width: 420px;
+      max-height: 280px;
+      display: none;
+      padding: 18px 18px 20px;
+      overflow: auto;
+      z-index: 40;
+      border-radius: var(--radius);
+      background: rgba(24, 24, 24, 0.9);
+      color: white;
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.28);
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .notes {
+      display: none;
+    }
+
+    .notes-panel.visible {
+      display: block;
+    }
+
+    .nav-zone {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 28%;
+      z-index: 20;
+      background: transparent;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .nav-zone.prev {
+      left: 0;
+    }
+
+    .nav-zone.next {
+      right: 0;
+    }
+
+    @media (max-width: 900px) {
+      .slide {
+        padding: 36px 34px 34px;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      h2 {
+        font-size: 31px;
+      }
+
+      .lead,
+      .text,
+      .bullets li {
+        font-size: 18px;
+      }
+
+      .split,
+      .split.reverse,
+      .full-map,
+      .closing,
+      .two-charts {
+        grid-template-columns: 1fr;
+      }
+
+      .method-flow,
+      .metric-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media print {
+      html,
+      body {
+        height: auto;
+        overflow: visible;
+        background: white;
+      }
+
+      body {
+        display: block;
+      }
+
+      .deck {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        overflow: visible;
+      }
+
+      .slide,
+      .slide.active {
+        position: relative;
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        page-break-after: always;
+      }
+
+      .nav-zone,
+      .progress,
+      .notes-panel {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck" aria-live="polite">
+    <section class="slide title active" data-title="Title">
+      <header>
+        <div class="eyebrow">PPHA 38520 GIS Final Project</div>
+        <h1>Mapping Cultural Access Gaps in Chicago</h1>
+        <p class="lead">A GIS analysis of museums, galleries, and arts centers as neighborhood cultural infrastructure.</p>
+      </header>
+      <div></div>
+      <div class="title-meta">
+        <p>Felix Liu, Qi Liu, Zhiyuan Zhou</p>
+        <p>May 2026</p>
+      </div>
+      <aside class="notes">
+        We open with the framing: Chicago is culturally rich, but the question is whether that richness is reachable from every neighborhood. The deck is about spatial access, not a complete measure of attendance or cultural belonging.
+      </aside>
+    </section>
+
+    <section class="slide" data-title="Question">
+      <header>
+        <div class="eyebrow">Research Question</div>
+        <h2>Does Chicago's cultural geography produce equitable neighborhood access?</h2>
+      </header>
+      <div class="content split">
+        <div class="stack">
+          <p class="claim">Our hypothesis: cultural institutions cluster around central, lakefront, and tourist-oriented areas, leaving longer access times in parts of the South, West, Northwest, and Southwest Sides.</p>
+          <ul class="bullets">
+            <li>We test whether access gaps align with income, poverty, race and ethnicity, and transportation disadvantage.</li>
+            <li>We compare two definitions: museum-only access and broader cultural-institution access.</li>
+            <li>We treat access as a spatial equity screen, not as a full measure of cultural participation.</li>
+          </ul>
+        </div>
+        <div class="metric-grid">
+          <div class="metric">
+            <strong>163</strong>
+            <span>broad cultural institutions after filtering and deduplication</span>
+          </div>
+          <div class="metric">
+            <strong>782</strong>
+            <span>Chicago census tracts in the analytical dataset</span>
+          </div>
+          <div class="metric">
+            <strong>2.67M</strong>
+            <span>residents represented in population-weighted comparisons</span>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Mapping Cultural Access Gaps in Chicago</span>
+        <span class="counter"></span>
+      </footer>
+      <aside class="notes">
+        Keep this slide tight. The key move is that we are not asking whether Chicago has museums. We are asking whether those cultural opportunities are spatially distributed in a way that supports neighborhood equity.
+      </aside>
+    </section>
+
+    <section class="slide" data-title="Method">
+      <header>
+        <div class="eyebrow">Data And Method</div>
+        <h2>We connect cultural locations to residential geography.</h2>
+      </header>
+      <div class="content stack">
+        <div class="method-flow">
+          <div class="method-step">
+            <div class="step-num">1</div>
+            <h3>Build inventory</h3>
+            <p>OpenStreetMap museums, galleries, and arts centers inside Chicago; CTA L stops provide transit context.</p>
+          </div>
+          <div class="method-step">
+            <div class="step-num">2</div>
+            <h3>Attach neighborhoods</h3>
+            <p>2024 ACS tract attributes and official community areas make the access patterns demographically and locally legible.</p>
+          </div>
+          <div class="method-step">
+            <div class="step-num">3</div>
+            <h3>Measure proximity</h3>
+            <p>Tract representative-point distance to the nearest institution, converted to walking-time proxy at 3 mph.</p>
+          </div>
+          <div class="method-step">
+            <div class="step-num">4</div>
+            <h3>Compare equity</h3>
+            <p>QGIS maps, population-weighted group summaries, museum-only sensitivity test, and a descriptive tract model.</p>
+          </div>
+        </div>
+        <p class="quote">The measure is intentionally modest: it captures spatial opportunity, not total lived accessibility.</p>
+        <div class="pill-row">
+          <span class="pill">ACS 2024 5-year</span>
+          <span class="pill">TIGER/Line 2024</span>
+          <span class="pill">City of Chicago boundaries</span>
+          <span class="pill">OpenStreetMap via Overpass</span>
+          <span class="pill">QGIS maps</span>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Distance proxy follows the accessibility distinction in Geurs and van Wee: useful, transparent, limited.</span>
+        <span class="counter"></span>
+      </footer>
+      <aside class="notes">
+        This is the credibility slide. Emphasize that the method is transparent and reproducible. Also say clearly what it does not do: no street network, no GTFS travel time, no cost, hours, language access, or subjective welcome.
+      </aside>
+    </section>
+
+    <section class="slide full-visual" data-title="Distribution">
+      <header>
+        <div class="eyebrow">Finding 1</div>
+        <h2>Cultural institutions are not evenly distributed.</h2>
+      </header>
+      <div class="content full-map">
+        <div class="figure-wrap">
+          <img class="figure" src="../figures/fig_01_institution_distribution_qgis.png" alt="QGIS map of museums, galleries, arts centers, CTA stops, and community areas in Chicago">
+        </div>
+        <div class="stack">
+          <div class="callout">
+            <strong>0.70</strong>
+            <span>nearest-neighbor ratio for broad cultural institutions</span>
+          </div>
+          <ul class="bullets">
+            <li>Clusters appear around the Loop, Near North Side, Near West Side, Lincoln Park, Hyde Park, and lakefront corridors.</li>
+            <li>Large portions of the outer city have few nearby cultural points even before we consider museum-only access.</li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Source: QGIS map from OSM, City of Chicago, CTA, and ACS-linked geography.</span>
+        <span class="counter"></span>
+      </footer>
+      <aside class="notes">
+        Use the map visually. Point out the dense east-central cluster and the thinner outer geographies. The nearest-neighbor statistic gives a simple numerical support for what the map shows.
+      </aside>
+    </section>
+
+    <section class="slide full-visual" data-title="Broad Access">
+      <header>
+        <div class="eyebrow">Finding 2</div>
+        <h2>Broad cultural access is strongest near central and lakefront areas.</h2>
+      </header>
+      <div class="content full-map">
+        <div class="figure-wrap">
+          <img class="figure" src="../figures/fig_02_broad_access_tracts_qgis.png" alt="QGIS choropleth map of walking-time access to nearest broad cultural institution by census tract">
+        </div>
+        <div class="stack">
+          <div class="callout">
+            <strong>18.8</strong>
+            <span>population-weighted average walking minutes to the nearest broad institution</span>
+          </div>
+          <ul class="bullets">
+            <li>Shorter access concentrates around the Loop, North Side, Hyde Park, and adjacent cultural corridors.</li>
+            <li>Longer access appears in far Northwest, Southwest, West, and far South or Southeast communities.</li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Access is tract representative-point distance converted to walking minutes at 3 mph.</span>
+        <span class="counter"></span>
+      </footer>
+      <aside class="notes">
+        This is the main access map. Avoid overclaiming: the map is a proxy for proximity. The big story is centrality plus edge-neighborhood exclusion, not a clean North-South split.
+      </aside>
+    </section>
+
+    <section class="slide full-visual" data-title="Poverty">
+      <header>
+        <div class="eyebrow">Finding 3</div>
+        <h2>Poverty matters, but it does not explain the geography by itself.</h2>
+      </header>
+      <div class="content full-map">
+        <div class="figure-wrap">
+          <img class="figure" src="../figures/fig_03_poverty_access_bivariate_qgis.png" alt="Bivariate QGIS map combining poverty terciles and broad cultural access terciles">
+        </div>
+        <div class="stack">
+          <div class="legend-bars">
+            <div class="bar-row">
+              <span class="label">High poverty</span>
+              <span class="bar-track"><span class="bar rust" style="width: 77%"></span></span>
+              <span class="bar-value">20.9 min</span>
+            </div>
+            <div class="bar-row">
+              <span class="label">Low poverty</span>
+              <span class="bar-track"><span class="bar teal" style="width: 66%"></span></span>
+              <span class="bar-value">17.8 min</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Some high-poverty tracts near central cultural clusters still have short proximity.</li>
+            <li>Some lower-poverty outer neighborhoods have long access because they sit far from institution clusters.</li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Population-weighted broad access: top poverty quartile vs bottom poverty quartile.</span>
+        <span class="counter"></span>
+      </footer>
+      <aside class="notes">
+        Explain the bivariate map with one sentence: the most concerning locations are high-poverty and long-access together. Then pivot: poverty alone is not the strongest raw divide in the project.
+      </aside>
+    </section>
+
+    <section class="slide" data-title="Race And Ethnicity">
+      <header>
+        <div class="eyebrow">Finding 4</div>
+        <h2>The largest descriptive access gaps are racial and ethnic.</h2>
+      </header>
+      <div class="content split reverse">
+        <div class="chart-panel">
+          <h3>Average walking minutes to nearest broad institution</h3>
+          <div class="legend-bars">
+            <div class="bar-row">
+              <span class="label">Majority White</span>
+              <span class="bar-track"><span class="bar teal" style="width: 53%"></span></span>
+              <span class="bar-value">14.4</span>
+            </div>
+            <div class="bar-row">
+              <span class="label">Majority Hispanic</span>
+              <span class="bar-track"><span class="bar rust" style="width: 85%"></span></span>
+              <span class="bar-value">22.8</span>
+            </div>
+            <div class="bar-row">
+              <span class="label">Majority Black</span>
+              <span class="bar-track"><span class="bar black" style="width: 89%"></span></span>
+              <span class="bar-value">23.9</span>
+            </div>
+          </div>
+          <p class="text">Majority Black and majority Hispanic tracts average roughly 8-10 more walking minutes than majority White tracts.</p>
+        </div>
+        <div class="stack">
+          <p class="claim">This is not just a poverty gradient or a car-ownership story.</p>
+          <ul class="bullets">
+            <li>Majority White tracts: 80.9% of residents are within 1 mile of a broad cultural institution.</li>
+            <li>Majority Hispanic tracts: 56.4% are within 1 mile.</li>
+            <li>Majority Black tracts: 44.9% are within 1 mile.</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">Population-weighted</span>
+            <span class="pill">Tract group comparison</span>
+            <span class="pill">Broad institution definition</span>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Source: outputs/tables/tbl_01_group_access_summary.csv.</span>
+        <span class="counter"></span>
+      </footer>
+      <aside class="notes">
+        This slide should land the equity claim. The numbers are simple enough to say out loud. Use the within-one-mile shares to make the gap concrete.
+      </aside>
+    </section>
+
+    <section class="slide full-visual" data-title="Museum Only">
+      <header>
+        <div class="eyebrow">Sensitivity Test</div>
+        <h2>Museum-only access makes the inequality sharper.</h2>
+      </header>
+      <div class="content full-map">
+        <div class="figure-wrap">
+          <img class="figure" src="../figures/fig_07_museum_only_access_qgis.png" alt="QGIS choropleth map of walking-time access to nearest museum-only institution">
+        </div>
+        <div class="stack">
+          <div class="metric-grid" style="grid-template-columns: 1fr;">
+            <div class="metric">
+              <strong>65.3%</strong>
+              <span>of residents within 1 mile of a broad cultural institution</span>
+            </div>
+            <div class="metric">
+              <strong>48.8%</strong>
+              <span>of residents within 1 mile of a museum-only institution</span>
+            </div>
+          </div>
+          <p class="text">Galleries and arts centers soften the geography, but they do not erase the spatial equity gap.</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Broad inventory includes museums, galleries, and arts centers; museum-only uses OSM tourism=museum.</span>
+        <span class="counter"></span>
+      </footer>
+      <aside class="notes">
+        The point is not that galleries and arts centers are substitutes for museums. The point is that our answer changes by institution definition, which is why the paper tests both.
+      </aside>
+    </section>
+
+    <section class="slide" data-title="Model">
+      <header>
+        <div class="eyebrow">Descriptive Model</div>
+        <h2>After controls, centrality, density, and race/ethnicity still structure access.</h2>
+      </header>
+      <div class="content two-charts">
+        <div class="chart-panel">
+          <h3>Population-weighted tract model</h3>
+          <img class="figure" src="../figures/fig_06_regression_coefficients.png" alt="Coefficient plot for population-weighted tract model">
+        </div>
+        <div class="chart-panel">
+          <h3>Interpretation in plain English</h3>
+          <ul class="bullets">
+            <li>Distance from the Loop is the strongest predictor: about 2.1 more walking minutes per additional mile.</li>
+            <li>Population density predicts shorter access.</li>
+            <li>Black and Hispanic population shares remain positively associated with longer access times.</li>
+            <li>Poverty and no-vehicle rates are not positive predictors after these controls.</li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Model is descriptive, not causal. Outcome is broad walking-time proxy.</span>
+        <span class="counter"></span>
+      </footer>
+      <aside class="notes">
+        Keep the caveat in the same breath as the finding. This is a descriptive model, not proof of causation. It still supports the bigger point: the gap is geographic and racialized, not just economic.
+      </aside>
+    </section>
+
+    <section class="slide" data-title="Policy">
+      <header>
+        <div class="eyebrow">Conclusion</div>
+        <h2>Chicago's issue is not cultural abundance. It is uneven cultural proximity.</h2>
+      </header>
+      <div class="content closing">
+        <div class="closing-block">
+          <h3>What the maps imply</h3>
+          <p>Cultural equity should be measured as neighborhood infrastructure, not only as audience outreach or citywide institutional prestige.</p>
+          <p>Support for neighborhood-based cultural organizations matters most in lower-access areas on the outer South, West, Northwest, and Southwest Sides.</p>
+        </div>
+        <div class="closing-block">
+          <h3>What future work should add</h3>
+          <p>Replace straight-line proximity with GTFS-based transit time, then add hours, cost, disability access, language access, programming relevance, and safety.</p>
+          <p>Validate the OSM inventory against local cultural directories so smaller organizations are not missed.</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Bottom line: abundance and equity are different spatial questions.</span>
+        <span class="counter"></span>
+      </footer>
+      <aside class="notes">
+        End with the key sentence: abundance is not the same as equitable spatial access. This gives a practical policy interpretation while staying honest about the study's limits.
+      </aside>
+    </section>
+
+    <section class="slide" data-title="Appendix">
+      <header>
+        <div class="eyebrow">Backup</div>
+        <h2>Key figures for questions</h2>
+      </header>
+      <div class="content two-charts">
+        <div class="chart-panel">
+          <h3>Community-area access</h3>
+          <img class="figure" src="../figures/fig_04_community_access_qgis.png" alt="QGIS community-area map of cultural access in Chicago">
+        </div>
+        <div class="chart-panel">
+          <h3>Access distribution by poverty group</h3>
+          <img class="figure" src="../figures/fig_05_access_by_poverty_boxplot.png" alt="Boxplot showing broad access by poverty group">
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Use if asked about local community names or distribution within poverty groups.</span>
+        <span class="counter"></span>
+      </footer>
+      <aside class="notes">
+        This is a backup slide. You can skip it during the main talk unless there is time or someone asks for community-area detail.
+      </aside>
+    </section>
+
+    <button class="nav-zone prev" type="button" aria-label="Previous slide"></button>
+    <button class="nav-zone next" type="button" aria-label="Next slide"></button>
+    <div class="progress" aria-hidden="true"><span></span></div>
+    <div class="notes-panel" id="notesPanel"></div>
+  </main>
+
+  <script>
+    const slides = Array.from(document.querySelectorAll(".slide"));
+    const progress = document.querySelector(".progress span");
+    const counters = Array.from(document.querySelectorAll(".counter"));
+    const notesPanel = document.getElementById("notesPanel");
+    const prevZone = document.querySelector(".nav-zone.prev");
+    const nextZone = document.querySelector(".nav-zone.next");
+    let current = 0;
+    let notesVisible = false;
+
+    function render() {
+      slides.forEach((slide, index) => {
+        slide.classList.toggle("active", index === current);
+      });
+
+      const label = `${String(current + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
+      counters.forEach((counter) => {
+        counter.textContent = label;
+      });
+
+      progress.style.width = `${((current + 1) / slides.length) * 100}%`;
+      document.title = `${slides[current].dataset.title || "Slide"} - Mapping Cultural Access Gaps in Chicago`;
+      updateNotes();
+    }
+
+    function updateNotes() {
+      const note = slides[current].querySelector(".notes");
+      notesPanel.textContent = note ? note.textContent.trim() : "";
+      notesPanel.classList.toggle("visible", notesVisible && notesPanel.textContent.length > 0);
+    }
+
+    function go(delta) {
+      current = Math.max(0, Math.min(slides.length - 1, current + delta));
+      render();
+    }
+
+    function goTo(index) {
+      current = Math.max(0, Math.min(slides.length - 1, index));
+      render();
+    }
+
+    prevZone.addEventListener("click", () => go(-1));
+    nextZone.addEventListener("click", () => go(1));
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight" || event.key === "PageDown" || event.key === " ") {
+        event.preventDefault();
+        go(1);
+      }
+      if (event.key === "ArrowLeft" || event.key === "PageUp" || event.key === "Backspace") {
+        event.preventDefault();
+        go(-1);
+      }
+      if (event.key === "Home") {
+        event.preventDefault();
+        goTo(0);
+      }
+      if (event.key === "End") {
+        event.preventDefault();
+        goTo(slides.length - 1);
+      }
+      if (event.key.toLowerCase() === "n") {
+        notesVisible = !notesVisible;
+        updateNotes();
+      }
+    });
+
+    render();
+  </script>
+</body>
+</html>
