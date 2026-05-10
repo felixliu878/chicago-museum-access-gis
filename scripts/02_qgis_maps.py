@@ -220,7 +220,7 @@ def add_map_furniture(layout: QgsPrintLayout, map_item: QgsLayoutItemMap) -> Non
     north_arrow.setLinkedMap(map_item)
     north_arrow.setBackgroundEnabled(True)
     north_arrow.setBackgroundColor(QColor(255, 255, 255, 210))
-    north_arrow.attemptMove(QgsLayoutPoint(190, 190, QgsUnitTypes.LayoutMillimeters))
+    north_arrow.attemptMove(QgsLayoutPoint(194, 28, QgsUnitTypes.LayoutMillimeters))
     north_arrow.attemptResize(QgsLayoutSize(12, 14, QgsUnitTypes.LayoutMillimeters))
     layout.addLayoutItem(north_arrow)
 
