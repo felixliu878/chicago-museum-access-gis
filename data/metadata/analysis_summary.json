@@ -1,5 +1,5 @@
 {
-  "run_timestamp": "2026-05-06 03:10:14 CDT",
+  "run_timestamp": "2026-05-14 14:39:53 CDT",
   "crs_analysis": "EPSG:26916",
   "walking_speed_mph": 3.0,
   "sources": [
@@ -22,6 +22,11 @@
       "name": "City of Chicago CTA L stops",
       "url": "https://data.cityofchicago.org/resource/8pix-ypme.geojson",
       "note": "Station points used as transit context in the QGIS project."
+    },
+    {
+      "name": "City of Chicago CTA L rail lines",
+      "url": "https://data.cityofchicago.org/resource/xbyr-jnvx.geojson",
+      "note": "Rail line geometries used as transit context in the QGIS project."
     },
     {
       "name": "OpenStreetMap via Overpass API",

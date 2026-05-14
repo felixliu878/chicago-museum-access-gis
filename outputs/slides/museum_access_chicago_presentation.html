@@ -758,6 +758,7 @@
             <strong>0.70</strong>
             <span>nearest-neighbor ratio for broad cultural institutions</span>
           </div>
+          <p class="text">Ratio = observed mean nearest-neighbor distance divided by the expected distance under a random point pattern.</p>
           <ul class="bullets">
             <li>Clusters appear around the Loop, Near North Side, Near West Side, Lincoln Park, Hyde Park, and lakefront corridors.</li>
             <li>Large portions of the outer city have few nearby cultural points even before we consider museum-only access.</li>
@@ -769,7 +770,7 @@
         <span class="counter"></span>
       </footer>
       <aside class="notes">
-        Use the map visually. Point out the dense east-central cluster and the thinner outer geographies. The nearest-neighbor statistic gives a simple numerical support for what the map shows.
+        Use the map visually. Point out the dense east-central cluster, the CTA rail context, and the thinner outer geographies. The nearest-neighbor ratio is observed mean nearest-neighbor distance divided by expected nearest-neighbor distance for a random point pattern with the same number of institutions over the broad-institution convex-hull area. Here observed is about 555 meters and expected is about 791 meters, so 0.70 means institutions are closer together than random.
       </aside>
     </section>
 
@@ -794,11 +795,11 @@
         </div>
       </div>
       <footer class="footer">
-        <span>Access is tract representative-point distance converted to walking minutes at 3 mph.</span>
+        <span>Time proxy = representative-point straight-line distance in miles / 3 mph x 60.</span>
         <span class="counter"></span>
       </footer>
       <aside class="notes">
-        This is the main access map. Avoid overclaiming: the map is a proxy for proximity. The big story is centrality plus edge-neighborhood exclusion, not a clean North-South split.
+        This is the main access map. Avoid overclaiming: the map is a proximity proxy, not a transit or street-network travel time. The calculation is distance from each tract representative point to the nearest broad cultural institution, divided by 3 miles per hour and multiplied by 60. The big story is centrality plus edge-neighborhood exclusion, not a clean North-South split.
       </aside>
     </section>
 
@@ -825,17 +826,18 @@
             </div>
           </div>
           <ul class="bullets">
+            <li>Hue shows poverty tercile; shade shows access time, with darker shades meaning longer access.</li>
             <li>Some high-poverty tracts near central cultural clusters still have short proximity.</li>
             <li>Some lower-poverty outer neighborhoods have long access because they sit far from institution clusters.</li>
           </ul>
         </div>
       </div>
       <footer class="footer">
-        <span>Population-weighted broad access: top poverty quartile vs bottom poverty quartile.</span>
+        <span>Bivariate colors: poverty determines hue; access time determines light-to-dark shade.</span>
         <span class="counter"></span>
       </footer>
       <aside class="notes">
-        Explain the bivariate map with one sentence: the most concerning locations are high-poverty and long-access together. Then pivot: poverty alone is not the strongest raw divide in the project.
+        Explain the bivariate map with one sentence: each poverty group has its own color family, and darker shades mean longer access. The most concerning locations are high-poverty and long-access together. Then pivot: poverty alone is not the strongest raw divide in the project.
       </aside>
     </section>
 
@@ -881,11 +883,11 @@
         </div>
       </div>
       <footer class="footer">
-        <span>Source: outputs/tables/tbl_01_group_access_summary.csv.</span>
+        <span>Population-weighted means use sum(value x tract population) / sum(tract population).</span>
         <span class="counter"></span>
       </footer>
       <aside class="notes">
-        This slide should land the equity claim. The numbers are simple enough to say out loud. Use the within-one-mile shares to make the gap concrete.
+        This slide should land the equity claim. Population-weighted means treat each resident equally rather than each tract equally: multiply each tract value by its ACS population, sum those products, and divide by total population in the group. Use the within-one-mile shares to make the gap concrete.
       </aside>
     </section>
 
@@ -937,16 +939,16 @@
             <li>Distance from the Loop is the strongest predictor: about 2.1 more walking minutes per additional mile.</li>
             <li>Population density predicts shorter access.</li>
             <li>Black and Hispanic population shares remain positively associated with longer access times.</li>
-            <li>Poverty and no-vehicle rates are not positive predictors after these controls.</li>
+            <li>Poverty and no-vehicle rates are not statistically distinguishable from zero in the full model.</li>
           </ul>
         </div>
       </div>
       <footer class="footer">
-        <span>Model is descriptive, not causal. Outcome is broad walking-time proxy.</span>
+        <span>Population-weighted WLS; HC1 heteroskedasticity-robust standard errors; n = 763 complete tracts.</span>
         <span class="counter"></span>
       </footer>
       <aside class="notes">
-        Keep the caveat in the same breath as the finding. This is a descriptive model, not proof of causation. It still supports the bigger point: the gap is geographic and racialized, not just economic.
+        Keep the caveat in the same breath as the finding. Regression flow: start with 782 Chicago tracts; drop records missing model variables, mostly missing median income, leaving 763 complete tracts; outcome is broad_walk_min; predictors are poverty rate, no-vehicle household rate, Black share, Hispanic share, log median income, density per 10,000 residents per square mile, and distance to the Loop; weights are ACS tract population; estimation is weighted least squares; standard errors use HC1, a heteroskedasticity-robust correction. Poverty is borderline at p = 0.051 and no-vehicle is p = 0.213 in the full model, so we should not treat either as a clear independent positive predictor after controls. It still supports the bigger point: the gap is geographic and racialized, not just economic.
       </aside>
     </section>
 

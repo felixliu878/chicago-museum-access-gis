@@ -30,6 +30,17 @@ OSM point features extracted with Overpass from `tourism=museum`,
 Ways and relations are represented by their OSM center coordinates.
 Duplicate names at nearly identical locations are collapsed.
 
+## Layer: cta_l_lines
+
+City of Chicago CTA rail line geometries used only for cartographic
+transit context. The route lines are not used in the access-time
+calculations.
+
+## Layer: cta_l_stops
+
+City of Chicago CTA L stop points used only for cartographic transit
+context. The stop points are not used in the access-time calculations.
+
 ## Layer: community_access
 
 Community-area polygons with population-weighted summaries of tract access

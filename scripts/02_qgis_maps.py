@@ -23,6 +23,7 @@ from qgis.core import (
     QgsLayoutItemScaleBar,
     QgsLayoutPoint,
     QgsLayoutSize,
+    QgsLineSymbol,
     QgsMarkerSymbol,
     QgsPrintLayout,
     QgsProject,
@@ -86,6 +87,16 @@ def marker_symbol(color: str, size: float, shape: str = "circle", outline: str =
     )
 
 
+def line_symbol(color: str, width: float = 0.75) -> QgsLineSymbol:
+    return QgsLineSymbol.createSimple(
+        {
+            "line_color": color,
+            "line_width": str(width),
+            "line_width_unit": "MM",
+        }
+    )
+
+
 def style_boundaries(community: QgsVectorLayer, city: QgsVectorLayer) -> None:
     community.setRenderer(QgsSingleSymbolRenderer(fill_symbol("#f5f1e8", "#b9b2a6", 0.12)))
     city.setRenderer(QgsSingleSymbolRenderer(fill_symbol("#00000000", "#333333", 0.45)))
@@ -98,6 +109,21 @@ def style_institutions(layer: QgsVectorLayer) -> None:
         QgsRendererCategory("Arts center", marker_symbol("#4a63a8", 2.0, "square"), "Arts center"),
     ]
     layer.setRenderer(QgsCategorizedSymbolRenderer("osm_type", categories))
+
+
+def style_cta_lines(layer: QgsVectorLayer) -> None:
+    categories = [
+        QgsRendererCategory("RD", line_symbol("#c60c30", 0.90), "Red Line"),
+        QgsRendererCategory("BL", line_symbol("#00a1de", 0.90), "Blue Line"),
+        QgsRendererCategory("BR", line_symbol("#62361b", 0.85), "Brown Line"),
+        QgsRendererCategory("GR", line_symbol("#009b3a", 0.85), "Green Line"),
+        QgsRendererCategory("OR", line_symbol("#f9461c", 0.85), "Orange Line"),
+        QgsRendererCategory("PK", line_symbol("#e27ea6", 0.85), "Pink Line"),
+        QgsRendererCategory("PR", line_symbol("#522398", 0.85), "Purple Line"),
+        QgsRendererCategory("YL", line_symbol("#f9e300", 0.95), "Yellow Line"),
+        QgsRendererCategory("ML", line_symbol("#777777", 0.65), "Multiple lines"),
+    ]
+    layer.setRenderer(QgsCategorizedSymbolRenderer("legend", categories))
 
 
 def graduated(layer: QgsVectorLayer, field: str, breaks: list[tuple[float, float, str, str]]) -> None:
@@ -154,15 +180,15 @@ def style_community(layer: QgsVectorLayer) -> None:
 
 def style_bivariate(layer: QgsVectorLayer) -> None:
     colors = {
-        "Low poverty / Short access": "#e8e8e8",
-        "Low poverty / Mid access": "#ace4e4",
-        "Low poverty / Long access": "#5ac8c8",
-        "Mid poverty / Short access": "#dfb0d6",
-        "Mid poverty / Mid access": "#a5add3",
-        "Mid poverty / Long access": "#5698b9",
-        "High poverty / Short access": "#be64ac",
-        "High poverty / Mid access": "#8c62aa",
-        "High poverty / Long access": "#3b4994",
+        "Low poverty / Short access": "#f7c8bc",
+        "Low poverty / Mid access": "#df7c62",
+        "Low poverty / Long access": "#9f3b2f",
+        "Mid poverty / Short access": "#f5df9c",
+        "Mid poverty / Mid access": "#e2ba45",
+        "Mid poverty / Long access": "#9b7620",
+        "High poverty / Short access": "#d4cbe6",
+        "High poverty / Mid access": "#8d78bb",
+        "High poverty / Long access": "#3f2d73",
     }
     categories = [
         QgsRendererCategory(value, fill_symbol(color, "#ffffff", 0.04), value)
@@ -268,7 +294,7 @@ def export_map(
     add_map_furniture(layout, map_item)
 
     source = (
-        "Sources: ACS 2024 5-year, 2024 TIGER/Line, City of Chicago community areas, "
+        "Sources: ACS 2024 5-year, 2024 TIGER/Line, City of Chicago community/CTA layers, "
         "OpenStreetMap via Overpass. Distances are tract representative-point walking-time proxies."
     )
     add_label(layout, source, 8, 203, 7, False, 260)
@@ -296,6 +322,7 @@ def main() -> None:
     city = clone_layer("city_boundary", "Chicago boundary", lambda layer: None)
     style_boundaries(community, city)
     institutions = clone_layer("cultural_institutions", "Cultural institutions", style_institutions)
+    cta_lines = clone_layer("cta_l_lines", "CTA L routes", style_cta_lines)
     cta = clone_layer("cta_l_stops", "CTA L stops", lambda layer: layer.setRenderer(
         QgsCategorizedSymbolRenderer(
             "",
@@ -312,6 +339,7 @@ def main() -> None:
         community,
         city,
         institutions,
+        cta_lines,
         cta,
         tracts_access,
         tracts_museum,
@@ -332,8 +360,8 @@ def main() -> None:
         "fig_01_institution_distribution_qgis",
         "Museum and Cultural Institution Distribution in Chicago",
         "OSM museums, galleries, and arts centers over official community areas",
-        [institutions, cta, city, community],
-        [institutions, cta],
+        [institutions, cta, cta_lines, city, community],
+        [institutions, cta_lines, cta],
         "Institution type",
     )
     export_map(

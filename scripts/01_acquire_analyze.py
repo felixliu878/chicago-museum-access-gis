@@ -72,6 +72,11 @@ SOURCES = [
         "Station points used as transit context in the QGIS project.",
     ),
     Source(
+        "City of Chicago CTA L rail lines",
+        "https://data.cityofchicago.org/resource/xbyr-jnvx.geojson",
+        "Rail line geometries used as transit context in the QGIS project.",
+    ),
+    Source(
         "OpenStreetMap via Overpass API",
         "https://overpass-api.de/api/interpreter",
         "Museum, gallery, and arts-centre points extracted on the run date.",
@@ -178,6 +183,13 @@ def load_cta_stations() -> gpd.GeoDataFrame:
     return stations[["stop_id", "station_label", "red", "blue", "g", "brn", "p", "pnk", "o", "y", "geometry"]]
 
 
+def load_cta_lines() -> gpd.GeoDataFrame:
+    path = DATA_RAW / "cta_l_lines.geojson"
+    download_text(SOURCES[4].url + "?$limit=100000", path, timeout=120)
+    lines = gpd.read_file(path).to_crs(CRS_WGS84)
+    return lines[["description", "legend", "type", "lines", "geometry"]]
+
+
 def load_osm_institutions(city_boundary: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     raw_path = DATA_RAW / "osm_chicago_cultural_institutions_overpass.json"
     if not raw_path.exists():
@@ -195,7 +207,7 @@ def load_osm_institutions(city_boundary: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
             out center tags;
             """
         ).strip()
-        response = post(SOURCES[4].url, data={"data": query}, timeout=180)
+        response = post(SOURCES[5].url, data={"data": query}, timeout=180)
         raw_path.write_text(response.text, encoding="utf-8")
 
     payload = json.loads(raw_path.read_text(encoding="utf-8"))
@@ -592,6 +604,7 @@ def write_outputs(
     community_areas: gpd.GeoDataFrame,
     institutions: gpd.GeoDataFrame,
     cta_stations: gpd.GeoDataFrame,
+    cta_lines: gpd.GeoDataFrame,
     group_summary: pd.DataFrame,
     community_summary: gpd.GeoDataFrame,
     coefficients: pd.DataFrame,
@@ -614,6 +627,7 @@ def write_outputs(
         (institutions[institutions["osm_type"] == "Museum"], "museums_only"),
         (community_areas, "community_areas"),
         (city_boundary, "city_boundary"),
+        (cta_lines, "cta_l_lines"),
         (cta_stations, "cta_l_stops"),
     ]
     for layer, name in layers:
@@ -720,6 +734,17 @@ def data_dictionary() -> str:
         Ways and relations are represented by their OSM center coordinates.
         Duplicate names at nearly identical locations are collapsed.
 
+        ## Layer: cta_l_lines
+
+        City of Chicago CTA rail line geometries used only for cartographic
+        transit context. The route lines are not used in the access-time
+        calculations.
+
+        ## Layer: cta_l_stops
+
+        City of Chicago CTA L stop points used only for cartographic transit
+        context. The stop points are not used in the access-time calculations.
+
         ## Layer: community_access
 
         Community-area polygons with population-weighted summaries of tract access
@@ -734,6 +759,7 @@ def main() -> None:
     tracts = load_tracts()
     community_areas = load_community_areas()
     cta_stations = load_cta_stations()
+    cta_lines = load_cta_lines()
     city_boundary = gpd.GeoDataFrame(
         {"name": ["Chicago"]},
         geometry=[unary_union(community_areas.geometry)],
@@ -751,6 +777,7 @@ def main() -> None:
         community_areas,
         institutions,
         cta_stations,
+        cta_lines,
         group_summary,
         community_summary,
         coefficients,

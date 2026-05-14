@@ -24,7 +24,7 @@
 \maketitle
 
 \begin{abstract}
-This project asks whether museums and related cultural institutions in Chicago are spatially distributed in a way that provides equitable neighborhood access. We combine 2024 American Community Survey tract data, 2024 TIGER/Line tract geometry, official Chicago community-area boundaries, CTA rail-stop context, and an OpenStreetMap inventory of museums, galleries, and arts centers. The analysis measures tract-level proximity to cultural institutions using representative-point distance, maps citywide access patterns in QGIS, compares access across demographic groups, and estimates a population-weighted tract model. The results show that cultural institutions are strongly clustered and that access gaps are clearest for majority Black and majority Hispanic tracts and for outer South, West, Northwest, and Southwest Side community areas. About 65.3 percent of Chicago's population lives within one mile of a broad cultural institution, but only 48.8 percent lives within one mile of a museum-only location. The broad conclusion is that Chicago's cultural access problem is not simply a poverty gradient or a car-ownership gradient; it is a spatial and racialized geography of institutional concentration, centrality, and edge-neighborhood exclusion.
+This project asks whether museums and related cultural institutions in Chicago are spatially distributed in a way that provides equitable neighborhood access. We combine 2024 American Community Survey tract data, 2024 TIGER/Line tract geometry, official Chicago community-area boundaries, CTA rail-stop and rail-line context, and an OpenStreetMap inventory of museums, galleries, and arts centers. The analysis measures tract-level proximity to cultural institutions using representative-point distance, maps citywide access patterns in QGIS, compares access across demographic groups, and estimates a population-weighted tract model. The results show that cultural institutions are strongly clustered and that access gaps are clearest for majority Black and majority Hispanic tracts and for outer South, West, Northwest, and Southwest Side community areas. About 65.3 percent of Chicago's population lives within one mile of a broad cultural institution, but only 48.8 percent lives within one mile of a museum-only location. The broad conclusion is that Chicago's cultural access problem is not simply a poverty gradient or a car-ownership gradient; it is a spatial and racialized geography of institutional concentration, centrality, and edge-neighborhood exclusion.
 \end{abstract}
 
 \section{Research Question and Hypotheses}
@@ -47,7 +47,7 @@ Together, this literature implies three design choices. First, a cultural equity
 
 \section{Data and Methods}
 
-The study area is the City of Chicago. Census tracts are the primary analytical unit because recent American Community Survey (ACS) data are available at that scale. Community areas are used for interpretation because they are official and locally legible. We use 2024 ACS five-year estimates for population, median household income, poverty, race, Hispanic origin, no-vehicle households, and public-transit commuting. Tract geometries come from 2024 TIGER/Line files, and community-area boundaries come from the City of Chicago data portal. Institution points are extracted from OpenStreetMap through Overpass on May 6, 2026. The QGIS project also includes CTA rail-stop points as transit context.
+The study area is the City of Chicago. Census tracts are the primary analytical unit because recent American Community Survey (ACS) data are available at that scale. Community areas are used for interpretation because they are official and locally legible. We use 2024 ACS five-year estimates for population, median household income, poverty, race, Hispanic origin, no-vehicle households, and public-transit commuting. Tract geometries come from 2024 TIGER/Line files, and community-area boundaries come from the City of Chicago data portal. Institution points are extracted from OpenStreetMap through Overpass on May 6, 2026. The QGIS project also includes CTA rail-stop points and rail-line geometries as transit context.
 
 The institution inventory has two definitions. The \textit{museum-only} universe includes OSM features tagged \texttt{tourism=museum}. The \textit{broad cultural-institution} universe includes those museums plus \texttt{tourism=gallery}, \texttt{amenity=arts\_centre}, and \texttt{amenity=arts\_center}. After filtering to Chicago and deduplicating repeated names at nearly identical locations, the final inventory contains 163 broad cultural institutions: 71 museums, 49 galleries, and 43 arts centers.
 
@@ -197,6 +197,11 @@ U.S. Census Bureau. (2024b).
 City of Chicago. (2025).
 \newblock Boundaries - Community Areas.
 \newblock \url{https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas/igwz-8jzy}
+
+\bibitem[City of Chicago(2026)]{chicagorail2026}
+City of Chicago. (2026).
+\newblock CTA L rail stops and rail lines.
+\newblock \url{https://data.cityofchicago.org/Transportation/CTA-L-Rail-Stations/8pix-ypme} and \url{https://data.cityofchicago.org/Transportation/CTA-L-Rail-Lines/xbyr-jnvx}
 
 \bibitem[OpenStreetMap contributors(2026)]{osm2026}
 OpenStreetMap contributors. (2026).

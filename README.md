@@ -8,6 +8,7 @@ This folder contains a completed GIS final project on spatial equity of access t
 - LaTeX source: `outputs/paper/museum_access_chicago.tex`
 - QGIS project: `outputs/qgis/museum_access_chicago.qgz`
 - QGIS map figures: `outputs/figures/fig_01_*_qgis.png` through `fig_04_*_qgis.png`, plus a museum-only sensitivity map
+- HTML presentation slides: `outputs/slides/museum_access_chicago_presentation.html`
 - Analysis tables: `outputs/tables/*.csv`
 - Processed GeoPackage: `data/processed/chicago_museum_access.gpkg`
 
@@ -16,10 +17,10 @@ This folder contains a completed GIS final project on spatial equity of access t
 From the project root:
 
 ```bash
-python3 scripts/01_acquire_analyze.py
+python scripts/01_acquire_analyze.py
 /Applications/QGIS-final-4_0_0.app/Contents/MacOS/python scripts/02_qgis_maps.py
 cd outputs/paper
-/Users/felix/.codex/plugins/cache/openai-bundled/latex-tectonic/0.1.0/bin/tectonic --outdir build museum_access_chicago.tex
+/Users/felix/.codex/plugins/cache/openai-bundled/latex-tectonic/0.1.1/bin/tectonic --outdir build museum_access_chicago.tex
 cp build/museum_access_chicago.pdf museum_access_chicago.pdf
 ```
 
@@ -29,6 +30,7 @@ cp build/museum_access_chicago.pdf museum_access_chicago.pdf
 - U.S. Census Bureau 2024 TIGER/Line census tracts
 - City of Chicago community-area boundaries
 - City of Chicago CTA L stop points
+- City of Chicago CTA L rail lines
 - OpenStreetMap cultural institution features extracted through Overpass API on May 6, 2026
 
 See `data/metadata/data_dictionary.md` and `data/metadata/analysis_summary.json` for variable definitions, source notes, counts, and key findings.
